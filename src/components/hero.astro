@@ -1,0 +1,50 @@
+---
+import { Picture } from "@astrojs/image/components";
+import girders from "../assets/ptrn-girders.jpeg";
+import bridge from "../assets/bridge-full.jpg";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<section class="relative flex bg-gradient-to-t from-[#E2E2E2] to-[#EDEDED]">
+  <div arial-label="Text-con" class="mt-6 ml-6 flex flex-col sm:max-w-sm">
+    <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+      Engineering a better Future, <span class="text-sky-600">Together</span>
+    </h1>
+
+    <p class="pt-6 text-xl">
+      Designed from the ground up to bridge the gap between your vision and
+      reality
+    </p>
+
+    <div class="pt-6 flex items-center gap-x-6">
+      <a
+        href="#"
+        class="rounded-lg bg-slate-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
+        >Contact us</a
+      >
+      <!-- <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">
+        Check our services
+        <span aria-hidden="true" class="text-black/25 sm:inline">→</span>
+      </a> -->
+      <a
+        class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15"
+        href="/contact"
+        ><span
+          >Check our services <span
+            aria-hidden="true"
+            class="text-black/25 sm:inline">→</span
+          ></span
+        ></a
+      >
+    </div>
+  </div>
+  <Picture
+    class="-z-10 inset-0 h-screen w-full object-cover"
+    src={bridge}
+    widths={widths}
+    sizes={sizes}
+    alt="Bridge"
+  />
+</section>

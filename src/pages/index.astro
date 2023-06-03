@@ -1,15 +1,27 @@
 ---
+import Header from "../components/header.astro";
+import Hero from "../components/hero.astro";
+
+// import Features from "~/components/features.astro";
+// import Intro from "~/components/intro.astro";
+// import Showcase from "~/components/showcase.astro";
+// import Compatibility from "~/components/compatibility.astro";
+
+import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
+const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<!-- [&>*]:border [&>*]:border-red-600 -->
+<div class="">
+  <Header />
+  <div class="relative">
+    <Hero />
+    <div>
+      At {SITE_TITLE}, we are dedicated to providing exceptional structural
+      engineering consultancy services that deliver robust and innovative
+      solutions for your projects. With our expertise and commitment to
+      excellence, we ensure that every structure we work on stands strong, with
+      a solid foundation for success.
+    </div>
+  </div>
+</div>
