@@ -3,9 +3,17 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header
-  class="relative z-50 w-full flex-none text-sm font-semibold leading-6 text-slate-900 bg-grey-400">
+  class="relative 
+  z-50 
+  w-full 
+  flex-none 
+  text-sm 
+  font-semibold 
+  leading-6 
+  text-slate-900 
+  bg-slate-100">
   <nav aria-label="Global" class="mx-auto max-w-container sm:px-8">
-    <div class="relative flex items-center py-7 px-4">
+    <div class="relative flex items-center py-7 px-6">
       <!-- Logo -->
       <a class="mr-auto flex-none text-slate-900 text-xl" href="/">
         <span class="sr-only">{SITE_TITLE}</span>
@@ -14,9 +22,9 @@ import { SITE_TITLE } from "../consts";
       <!-- Menu -->
       <div class="hidden sm:flex sm:items-center">
         <a href="/about">About us</a>
-        <a class="ml-8" href="/services">Services</a>
-        <a class="ml-8" href="/experience">Experience</a>
-        <a class="ml-8" href="/contact">Contact us</a>
+        <a class="ml-3 md:ml-6" href="/services">Services</a>
+        <a class="ml-3 md:ml-6" href="/experience">Experience</a>
+        <a class="ml-3 md:ml-6" href="/contact">Contact us</a>
       </div>
 
       <!-- mobile menu -->

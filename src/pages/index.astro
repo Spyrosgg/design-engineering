@@ -1,19 +1,13 @@
 ---
-import Header from "../components/header.astro";
+import BaseLayout from "../Layout/BaseLayout.astro";
 import Hero from "../components/hero.astro";
 
-// import Features from "~/components/features.astro";
-// import Intro from "~/components/intro.astro";
-// import Showcase from "~/components/showcase.astro";
-// import Compatibility from "~/components/compatibility.astro";
 
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
 const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 ---
 
-<!-- [&>*]:border [&>*]:border-red-600 -->
-<div class="">
-  <Header />
+<BaseLayout title="Home Page">
   <div class="relative">
     <Hero />
     <div>
@@ -24,4 +18,4 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
       a solid foundation for success.
     </div>
   </div>
-</div>
+</BaseLayout>
