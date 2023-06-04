@@ -10,11 +10,11 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 
 <IndexLayout title="Home Page">
   <Hero />
-  <div class="relative mt-16 px-24">
+  <div class="relative px-4 md:px-24 sm:px-16">
     <!-- MAIN -->
-    <div class="flex flex-col sm:flex-row gap-6 justify-between">
-      <h1 class="text-4xl">Better by design</h1>
-      <p class="max-w-md">
+    <div class="mt-8 sm:mt-16 flex flex-col sm:flex-row gap-6 justify-around">
+      <h1 class="text-4xl min-w-[160px]">Better by design</h1>
+      <p class="sm:max-w-md">
         At <span class="font-bold">{SITE_TITLE}</span>, we are dedicated to
         providing exceptional structural engineering consultancy services that
         deliver robust and innovative solutions for your projects. With our
@@ -24,15 +24,20 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
     </div>
 
     <Sectors />
-    <h2 class="mt-16 mb-2 text-lg">Discover the Difference</h2>
-    <p>
-      When you choose {SITE_TITLE} for your structural engineering consultancy needs,
-      you can expect more than just technical expertise. You can expect a partner
-      who is invested in your success and dedicated to delivering results that stand
-      the test of time. From residential and commercial buildings to industrial complexes
-      and infrastructure projects, we have the knowledge and skills to tackle any
-      challenge.
-    </p>
+
+    <div class="mt-8 sm:mt-16 flex flex-col-reverse sm:flex-row gap-6 justify-around">
+      <p class="sm:max-w-md">
+        When you choose <span class="font-bold">{SITE_TITLE}</span> for your structural
+        engineering consultancy needs, you can expect more than just technical expertise.
+        You can expect a partner who is invested in your success and dedicated to
+        delivering results that stand the test of time. From residential and commercial
+        buildings to industrial complexes and infrastructure projects, we have the
+        knowledge and skills to tackle any challenge..
+      </p>
+      <h1 class="text-4xl min-w-[220px] sm:text-right">Discover the Difference</h1>
+    </div>
+
+
     <MeetTheTeamSmall />
     <!-- MAIN -->
   </div>
