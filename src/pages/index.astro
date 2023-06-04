@@ -1,21 +1,39 @@
 ---
-import BaseLayout from "../Layout/BaseLayout.astro";
+import IndexLayout from "../Layout/IndexLayout.astro";
 import Hero from "../components/hero.astro";
-
+import Sectors from "../components/sectors.astro";
+import MeetTheTeamSmall from "../components/meetTeamSmall.astro";
 
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
 const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 ---
 
-<BaseLayout title="Home Page">
-  <div class="relative">
-    <Hero />
-    <div>
-      At {SITE_TITLE}, we are dedicated to providing exceptional structural
-      engineering consultancy services that deliver robust and innovative
-      solutions for your projects. With our expertise and commitment to
-      excellence, we ensure that every structure we work on stands strong, with
-      a solid foundation for success.
+<IndexLayout title="Home Page">
+  <Hero />
+  <div class="relative mt-16 px-24">
+    <!-- MAIN -->
+    <div class="flex flex-col sm:flex-row gap-6 justify-between">
+      <h1 class="text-4xl">Better by design</h1>
+      <p class="max-w-md">
+        At <span class="font-bold">{SITE_TITLE}</span>, we are dedicated to
+        providing exceptional structural engineering consultancy services that
+        deliver robust and innovative solutions for your projects. With our
+        expertise and commitment to excellence, we ensure that every structure
+        we work on stands strong, with a solid foundation for success.
+      </p>
     </div>
+
+    <Sectors />
+    <h2 class="mt-16 mb-2 text-lg">Discover the Difference</h2>
+    <p>
+      When you choose {SITE_TITLE} for your structural engineering consultancy needs,
+      you can expect more than just technical expertise. You can expect a partner
+      who is invested in your success and dedicated to delivering results that stand
+      the test of time. From residential and commercial buildings to industrial complexes
+      and infrastructure projects, we have the knowledge and skills to tackle any
+      challenge.
+    </p>
+    <MeetTheTeamSmall />
+    <!-- MAIN -->
   </div>
-</BaseLayout>
+</IndexLayout>

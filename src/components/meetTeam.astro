@@ -1,0 +1,49 @@
+---
+import { Picture, Image } from "@astrojs/image/components";
+
+import { SITE_TITLE } from "../consts";
+import profilePicA from "../assets/profileA.png";
+import profilePicB from "../assets/profileB.png";
+---
+
+<h2 class="mt-16 border-b-2 text-2xl">Meet Our Team</h2>
+<div class="mt-8 grid gap-8 sm:grid-cols-2 justify-center">
+  <div class="profileA flex flex-col items-center">
+    <Image class="mb-1 max-w-[80%] lg:max-w-[65%] p-8 rounded-full" src={profilePicA} alt="Spyros" />
+    <h2 class="text-xl">Diogo Pereira</h2>
+    <p class="mb-3 text-sm font-semibold leading-6 text-sky-600">
+      Co-Founder / Civil/Structural Engineer
+    </p>
+    <p>
+      Spyros is a chartered engineer with extended experience of new-build,
+      refurbishment and extension projects in several sectors i.e. High-rise
+      buildings, Rail, Educational, Heath Care and Commercial structures. He has
+      a strong engineering knowledge and attention to detail which enables him
+      to effectively identify design and commercial opportunities to create
+      efficiencies and add value to the project. He also specialises in BIM and
+      automation development, looking to drive innovation in the engineering
+      field. This enables him to increase team productivity and successfully
+      deliver significant projects on tight schedules, including Crossrail
+      delivery.
+    </p>
+  </div>
+  <div class="profileB flex flex-col items-center">
+    <Image class="mb-1 max-w-[80%] lg:max-w-[65%] p-8 rounded-full" src={profilePicB} alt="Spyros" />
+    <h2 class="text-xl">Spyros Gavriilidis</h2>
+    <p class="mb-3 text-sm font-semibold leading-6 text-sky-600">
+      Co-Founder / Civil/Structural Engineer
+    </p>
+    <p>
+      Spyros is a chartered engineer with extended experience of new-build,
+      refurbishment and extension projects in several sectors i.e. High-rise
+      buildings, Rail, Educational, Heath Care and Commercial structures. He has
+      a strong engineering knowledge and attention to detail which enables him
+      to effectively identify design and commercial opportunities to create
+      efficiencies and add value to the project. He also specialises in BIM and
+      automation development, looking to drive innovation in the engineering
+      field. This enables him to increase team productivity and successfully
+      deliver significant projects on tight schedules, including Crossrail
+      delivery.
+    </p>
+  </div>
+</div>

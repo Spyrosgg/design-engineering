@@ -1,0 +1,51 @@
+---
+import { Picture, Image } from "@astrojs/image/components";
+
+import { SITE_TITLE } from "../consts";
+import profilePicA from "../assets/profileA.png";
+import profilePicB from "../assets/profileB.png";
+---
+
+<!-- Meet the team -->
+<div class="py-6 sm:py-9">
+  <div
+    class="mx-auto grid max-w-7xl gap-x-8 gap-y-20  xl:grid-cols-3"
+  >
+    <div class="max-w-2xl">
+      <h2 class="text-xl font-bold tracking-tight sm:text-2xl">
+        Meet our team
+      </h2>
+      <p class="mt-2">
+        Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
+        elementum enim vitae ullamcorper suspendisse.
+      </p>
+    </div>
+    <ul
+      role="list"
+      class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+    >
+      <!-- People -->
+      <li>
+        <div class="flex items-center gap-x-6">
+          <Image
+            class="h-24 w-24 rounded-full"
+            src={profilePicA}
+            alt="Spyros"
+          />
+          <div>
+            <h3
+              class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+            >
+              Spyros Gavriilidis
+            </h3>
+            <p class="text-sm font-semibold leading-6 text-sky-600">
+              Co-Founder / Civil/Structural Engineer
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- More people... -->
+    </ul>
+  </div>
+</div>
