@@ -3,6 +3,7 @@ import IndexLayout from "../Layout/IndexLayout.astro";
 import Hero from "../components/hero.astro";
 import Sectors from "../components/sectors.astro";
 import MeetTheTeamSmall from "../components/meetTeamSmall.astro";
+import CTA from "../components/CTA.astro";
 
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
 const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
@@ -10,35 +11,55 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 
 <IndexLayout title="Home Page">
   <Hero />
-  <div class="relative px-4 md:px-24 sm:px-16">
+  <div class="relative max-w-7xl m-auto px-4 md:px-24 sm:px-16">
     <!-- MAIN -->
-    <div class="mt-8 sm:mt-16 flex flex-col sm:flex-row gap-6 justify-around">
+    <div class="mt-8 sm:mt-24 flex flex-col sm:flex-row gap-6 justify-around">
       <h1 class="text-4xl min-w-[160px]">Better by design</h1>
       <p class="sm:max-w-md">
         At <span class="font-bold">{SITE_TITLE}</span>, we are dedicated to
-        providing exceptional structural engineering consultancy services that
-        deliver robust and innovative solutions for your projects. With our
-        expertise and commitment to excellence, we ensure that every structure
-        we work on stands strong, with a solid foundation for success.
+        providing exceptional engineering services that deliver robust and
+        innovative solutions for your projects. With our expertise and
+        commitment to excellence, we ensure that every structure we work on
+        stands strong, with a solid foundation for success.
       </p>
     </div>
 
     <Sectors />
 
-    <div class="mt-8 sm:mt-16 flex flex-col-reverse sm:flex-row gap-6 justify-around">
+    <div
+      class="mt-8 sm:mt-24 flex flex-col-reverse sm:flex-row gap-6 justify-around">
       <p class="sm:max-w-md">
-        When you choose <span class="font-bold">{SITE_TITLE}</span> for your structural
-        engineering consultancy needs, you can expect more than just technical expertise.
-        You can expect a partner who is invested in your success and dedicated to
-        delivering results that stand the test of time. From residential and commercial
-        buildings to industrial complexes and infrastructure projects, we have the
-        knowledge and skills to tackle any challenge..
+        When you choose <span class="font-bold">{SITE_TITLE}</span> for your engineering
+        needs, you can expect more than just technical expertise. You can expect
+        a partner who is invested in your success and dedicated to delivering results
+        that stand the test of time. From residential and commercial buildings to
+        industrial complexes and infrastructure projects, we have the knowledge and
+        skills to tackle any challenge..
       </p>
-      <h1 class="text-4xl min-w-[220px] sm:text-right">Discover the Difference</h1>
+
+      <div class="flex flex-col items-start justify-start">
+        <div class="text-4xl min-w-[220px]">Discover the Difference</div>
+        <div class="mt-4 flex flex-col items-end">
+          <span class="relative top-2 left-1 flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-600"></span>
+          </span>
+          <!-- class="group inline-flex justify-center rounded-lg shadow-sm text-sm font-semibold py-3 px-4 bg-white text-zinc-800 ring-1 ring-zinc-300 hover:text-white hover:bg-zinc-800 hover:ring-zinc-900" -->
+          <a
+          class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white text-zinc-800 shadow-sm ring-1 ring-zinc-700/10 hover:bg-zinc-50"
+          href="/design-engineering/contact">
+          Contact us &nbsp;<span
+          aria-hidden="true"
+          class="text-zinc/50  sm:inline">→</span
+          >
+        </a>
+        </div>
+      </div>
     </div>
 
-
     <MeetTheTeamSmall />
+
     <!-- MAIN -->
   </div>
+  <CTA />
 </IndexLayout>

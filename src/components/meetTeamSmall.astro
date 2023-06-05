@@ -7,23 +7,27 @@ import profilePicB from "../assets/profileB.png";
 ---
 
 <!-- Meet the team -->
-<div class="mt-8 sm:mt-16">
-  <div
-    class="mx-auto grid max-w-7xl gap-x-8 gap-y-20  xl:grid-cols-3"
-  >
+<div class="mt-16 sm:mt-32">
+  <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 xl:grid-cols-3">
     <div class="max-w-2xl">
-      <h2 class="text-xl font-bold tracking-tight sm:text-2xl">
+      <h2 class="text-xl tracking-tight sm:text-2xl">
         Meet our team
       </h2>
       <p class="mt-2">
-        Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
-        elementum enim vitae ullamcorper suspendisse.
+        Building on 20+ Years of Engineering Expertise. &nbsp;
+        <a
+          class="inline-flex justify-center text-sm font-semibold text-zinc-800 hover:text-zinc-400"
+          href="/design-engineering/about">
+          Learn more &nbsp;<span
+            aria-hidden="true"
+            class="text-zinc/50 sm:inline">→</span
+          >
+        </a>
       </p>
     </div>
     <ul
       role="list"
-      class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
-    >
+      class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
       <!-- People -->
       <li>
         <div class="flex items-center gap-x-6">
@@ -33,19 +37,33 @@ import profilePicB from "../assets/profileB.png";
             alt="Spyros"
           />
           <div>
-            <h3
-              class="text-base font-semibold leading-7 tracking-tight text-gray-900"
-            >
-              Spyros Gavriilidis
-            </h3>
+            <h2 class="text-xl">Diogo Pereira</h2>
             <p class="text-sm font-semibold leading-6 text-sky-600">
-              Co-Founder / Civil/Structural Engineer
+              Civil & Structural Engineer
             </p>
+            <p class="text-sm font-semibold text-sky-600">Project manager</p>
+            <p class="mb-3 text-sm font-semibold text-sky-600">Co-Founder</p>
           </div>
         </div>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <Image
+              class="h-24 w-24 rounded-full"
+              src={profilePicB}
+              alt="Spyros"
+            />
+            <div>
+              <h2 class="text-xl">Spyros Gavriilidis</h2>
+              <p class="text-sm font-semibold leading-6 text-sky-600">
+                Civil & Structural Engineer
+              </p>
+              <p class="text-sm font-semibold text-sky-600">BIM manager</p>
+              <p class="mb-3 text-sm font-semibold text-sky-600">Co-Founder</p>
+            </div>
+          </div>
+          <!-- More people... -->
+        </li>
       </li>
-
-      <!-- More people... -->
     </ul>
   </div>
 </div>
