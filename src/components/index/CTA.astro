@@ -1,4 +1,9 @@
 ---
+import { Picture, Image } from "@astrojs/image/components";
+import pattern from "../../assets/ptrn-triangle.jpeg";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
 ---
 
@@ -19,25 +24,23 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
         <div
           class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
           <a
-            href="/design-engineering/contact"
+            href="/contact"
             class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >Get in touch</a
           >
           <a
-            href="/design-engineering/services"
+            href="/services"
             class="text-sm font-semibold leading-6 text-white"
             >Services <span aria-hidden="true">→</span></a
           >
         </div>
       </div>
       <div class="relative mt-16 h-36 sm:h-40 lg:h-80 lg:mt-8">
-        <img
-          class="absolute left-0 top-0 w-[57rem] max-w-none rounded-3xl bg-white/5 ring-1 ring-white/10"
-          src="src/assets/ptrn-girders.jpeg"
-          alt="App screenshot"
-          width="1824"
-          height="1080"
-        />
+        <Image
+        class="absolute left-0 top-0 w-[57rem] max-w-none rounded-3xl bg-white/5 ring-1 ring-white/10"
+        src={pattern}
+        alt="Triangle Patterns"
+      />
       </div>
     </div>
   </div>
