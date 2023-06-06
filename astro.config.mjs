@@ -8,5 +8,4 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), image(), react()],
   site: 'https://spyrosgg.github.io',
-  base: '/design-engineering',
 });
