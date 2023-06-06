@@ -1,5 +1,6 @@
 ---
 import { Picture, Image } from "@astrojs/image/components";
+import ikigai from "../assets/IKIGAI.svg";
 import BaseLayout from "../Layout/BaseLayout.astro";
 
 import WhyUs from "../components/about/whyUs.astro";
@@ -20,7 +21,7 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 
   <div
     class="mt-16 flex flex-col items-center md:flex-row md:justify-around gap-8">
-    <img class="max-w-xs" src="src/assets/IKIGAI.svg" alt="ikigai" />
+    <Image class="max-w-xs" src={ikigai} alt="ikigai" width={320} aspectRatio="1:1"/>
     <div>
       <h2 class="mb-0 text-lg">Our IKIGAI</h2>
       <p class="mb-2 text-sm text-sky-600">
