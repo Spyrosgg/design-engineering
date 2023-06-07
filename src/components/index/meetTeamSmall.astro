@@ -1,18 +1,16 @@
 ---
 import { Picture, Image } from "@astrojs/image/components";
 
-import { SITE_TITLE } from "../../consts";
-import profilePicA from "../../assets/profileA.png";
-import profilePicB from "../../assets/profileB.png";
+import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
+// import profilePicA from "../../assets/profileA.png";
+// import profilePicB from "../../assets/profileB.png";
 ---
 
 <!-- Meet the team -->
 <div class="mt-16 sm:mt-32">
   <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 xl:grid-cols-3">
     <div class="max-w-2xl">
-      <h2 class="text-xl tracking-tight sm:text-2xl">
-        Meet our team
-      </h2>
+      <h2 class="text-xl tracking-tight sm:text-2xl">Meet our team</h2>
       <p class="mt-2">
         Building on 20+ Years of Engineering Expertise. &nbsp;
         <a
@@ -31,10 +29,11 @@ import profilePicB from "../../assets/profileB.png";
       <!-- People -->
       <li>
         <div class="flex items-center gap-x-6">
-          <Image
+          <!-- <Image class="h-24 w-24 rounded-full" src={profilePicA} alt="Spyros" /> -->
+          <img
             class="h-24 w-24 rounded-full"
-            src={profilePicA}
-            alt="Spyros"
+            src="/assets/profileA.png"
+            alt="Diogo"
           />
           <div>
             <h2 class="text-xl">Diogo Pereira</h2>
@@ -47,9 +46,10 @@ import profilePicB from "../../assets/profileB.png";
         </div>
         <li>
           <div class="flex items-center gap-x-6">
-            <Image
+            <!-- <Image class="h-24 w-24 rounded-full" src={profilePicB} alt="Spyros" /> -->
+            <img
               class="h-24 w-24 rounded-full"
-              src={profilePicB}
+              src="/assets/profileB.png"
               alt="Spyros"
             />
             <div>
