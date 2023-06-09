@@ -15,9 +15,9 @@ import Sectors from "../components/index/sectors.astro";
     to meet your project's specific needs.
   </p>
 
-  <div class="flex flex-col items-center mt-12 sm:mt-32">
-    <div class="flex items-center max-w-7xl">
-      <div class="w-96 p-6 sm:p-8 text-white bg-zinc-800">
+  <div class="flex flex-col mt-12 sm:mt-32 max-w-7xl">
+    <!-- <div class="mt-12 grid sm:grid-cols-2 justify-center items-center max-w-7xl">
+      <div class="max-w-sm p-6 sm:p-8 text-white bg-zinc-800">
         <h1 class="text-2xl">Structural Engineering</h1>
         <p>
           We specialise in dtructural the design and analysis. Our team employs
@@ -25,18 +25,29 @@ import Sectors from "../components/index/sectors.astro";
           cost-effective structural designs.
         </p>
       </div>
-      <img
-        class="relative -z-10 right-12 max-w-lg"
-        src="/assets/ptrn-girders.jpeg"
-      />
+      <img class="relative -z-10 max-w-lg" 
+      src="/assets/ptrn-girders.jpeg" />
+    </div> -->
+
+    <div
+      class="flex flex-wrap-reverse  items-center max-w-7xl overflow-hidden">
+      <div
+        class="relative left-0 lg:left-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
+        <h1 class="text-2xl">Structural Engineering</h1>
+        <p>
+          We specialise in dtructural the design and analysis. Our team employs
+          advanced software and techniques to develop safe, efficient, and
+          cost-effective structural designs.
+        </p>
+      </div>
+      <img class="relative -z-10 max-w-lg rounded-xl" src="/assets/ptrn-girders.jpeg" />
     </div>
 
-    <div class="mt-12 flex items-center max-w-7xl">
-      <img
-        class="relative -z-10 left-12 max-w-lg"
-        src="/assets/bird-view.jpeg"
-      />
-      <div class="w-96 p-6 sm:p-8 text-white bg-zinc-800">
+    <div
+      class="lg:mt-12 flex flex-wrap justify-end  items-center max-w-7xl overflow-hidden">
+      <img class="relative -z-10 max-w-lg" src="/assets/bird-view.jpeg" />
+      <div
+        class="relative right-0 lg:right-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
         <h1 class="text-2xl">Civil Engineering</h1>
         <p>
           Our civil engineering services encompass site development, grading,
@@ -46,21 +57,20 @@ import Sectors from "../components/index/sectors.astro";
       </div>
     </div>
 
-    <div class="mt-12 flex items-center max-w-7xl">
-      <div class="w-96 p-6 sm:p-8 text-white bg-zinc-800">
+    <div
+      class="lg:mt-12 flex flex-wrap-reverse  items-center max-w-7xl overflow-hidden">
+      <div
+        class="relative left-0 lg:left-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
         <h1 class="text-2xl">Digital BIM</h1>
         <p class="font-bold">3D Modeling</p>
         <p class="font-bold">Management/Coordination</p>
         <p class="font-bold">Clash detection</p>
       </div>
-      <img
-        class="relative -z-10 right-12 max-w-lg"
-        src="/assets/bim-metro.jpeg"
-      />
+      <img class="relative -z-10 max-w-lg" src="/assets/bim-metro.jpeg" />
     </div>
   </div>
 
-  <div class="mt-12 sm:mt-32">
+  <div class="mt-12 lg:mt-32">
     At <span class="font-bold">{SITE_TITLE}</span>, we are motivated by the
     chance to make a difference in people's lives and improve their communities.
     We take satisfaction in creating infrastructure that enhances quality of

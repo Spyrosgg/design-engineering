@@ -23,9 +23,10 @@ import Sectors from "../components/index/sectors.astro";
         or fill out the contact form, and we'll get back to you promptly.
       </p>
     </div>
+
     <div
-      class="grid grid-cols-1 justify-center items-center sm:grid-cols-2 gap-4 mt-12 overflow-hidden">
-      <div class="text-lg">
+      class="max-w-2xl m-auto grid justify-center items-center md:grid-cols-2 gap-4 mt-12 overflow-hidden">
+      <div class="text-xl text-white font-semibold p-6 bg-sky-600 ">
         <div class="flex gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +34,7 @@ import Sectors from "../components/index/sectors.astro";
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 text-zinc-600">
+            class="w-6 h-6 text-white">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -43,7 +44,7 @@ import Sectors from "../components/index/sectors.astro";
           <a href="tel:+44777777777777">+44 (0) 777777777777</a>
         </div>
 
-        <div class="flex gap-4">
+        <div class="flex gap-4 mt-6">
           <div class="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +52,7 @@ import Sectors from "../components/index/sectors.astro";
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6 text-zinc-600">
+              class="w-6 h-6 text-white">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -62,26 +63,27 @@ import Sectors from "../components/index/sectors.astro";
           <a href="mailto:infog@desingeng.com">infog@desingeng.com</a>
         </div>
       </div>
-      <Picture
-        class="max-w-sm"
-        src={escalator}
-        widths={[200, 400, 800]}
-        sizes="(max-width: 800px) 100vw, 800px"
-        formats={["avif", "jpeg", "png", "webp"]}
-        alt="Escalator"
-      />
+      <div class="flex justify-center overflow-hidden rounded-lg">
+        <Picture
+          class="max-w-sm -z-10"
+          src={escalator}
+          widths={[200, 400, 800]}
+          sizes="(max-width: 800px) 100vw, 800px"
+          formats={["avif", "jpeg", "png", "webp"]}
+          alt="Escalator"
+        />
+      </div>
     </div>
 
-    <div class="mt-24  max-w-xl mx-auto">
-      <h2
-        class="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">
+    <div class="mt-24 max-w-xl mx-auto">
+      <h2 class="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">
         Get in touch
       </h2>
       <p class="mt-2 mx-auto text-zinc-600">
-        Please fill out the contact form below with your name, email address, and
-        a brief description of your project or inquiry. This will help us better
-        understand your needs and ensure that the right team member reaches out to
-        you promptly.
+        Please fill out the contact form below with your name, email address,
+        and a brief description of your project or inquiry. This will help us
+        better understand your needs and ensure that the right team member
+        reaches out to you promptly.
       </p>
     </div>
     <form action="#" method="POST" class="mx-auto mt-6 max-w-xl sm:mt-12">
