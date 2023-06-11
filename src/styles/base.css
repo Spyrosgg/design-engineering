@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .bg-grid-light {
+    /* opacity: 0.3; */
+    background-size: 1.5rem 1.5rem;
+    background-image: linear-gradient(to right, #f4f4f5 1px, transparent 1px),
+      linear-gradient(to bottom, #f4f4f5 1px, transparent 1px);
+  }
+  .bg-grid-dark {
+    /* opacity: 0.3; */
+    background-size: 1.5rem 1.5rem;
+    background-image: linear-gradient(to right, #27272a 1px, transparent 1px),
+      linear-gradient(to bottom, #27272a 1px, transparent 1px);
+  }
+}

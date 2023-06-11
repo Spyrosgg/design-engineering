@@ -1,21 +1,27 @@
 ---
 import { Picture, Image } from "@astrojs/image/components";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
+import profileA from "../../../public/profileA.png"
+import profileB from "../../../public/profileB.png"
 const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 
 // import profilePicA from "../../assets/profileA.png";
 // import profilePicB from "../../assets/profileB.png";
-const widths = [50, 150, 300];
 ---
 
 <h2 id="meet-our-team" class="mt-16 border-b-2 text-2xl">Meet Our Team</h2>
 <div class="mt-8 grid gap-8 sm:grid-cols-2 justify-center">
   <div class="profileA flex flex-col items-center">
     <!-- <Picture class="m-auto mb-1 max-w-[80%] lg:max-w-[65%] p-8 rounded-full" src={profilePicA} widths={widths} aspectRatio="1:1" alt="Diogo" /> -->
-    <img
+    <Picture
       class="m-auto mb-1 h-auto max-w-[15rem] md:max-w-xs p-4 sm:p-8 rounded-full"
-      src="/assets/profileA.png"
+      src={profileA}
       alt="Diogo"
+      widths={[200,300]}
+      aspectRatio="1:1"
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
     />
     <h2 class="text-xl">Diogo Pereira</h2>
     <p class="text-sm font-semibold leading-6 text-sky-600">
@@ -37,10 +43,15 @@ const widths = [50, 150, 300];
   </div>
   <div class="profileB flex flex-col items-center">
     <!-- <Picture class="m-auto mb-1 max-w-[80%] lg:max-w-[65%] p-8 rounded-full" src={profilePicB} widths={widths} aspectRatio="1:1" alt="Spyros" /> -->
-    <img
+    <Picture
       class="m-auto mb-1 h-auto max-w-[15rem] md:max-w-xs p-4 sm:p-8 rounded-full"
-      src="/assets/profileB.png"
-       alt="Spyros"
+      src={profileB}
+      alt="Spyros"
+      widths={[200,300]}
+      aspectRatio="1:1"
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
     />
     <h2 class="text-xl">Spyros Gavriilidis</h2>
     <p class="text-sm font-semibold leading-6 text-sky-600">
