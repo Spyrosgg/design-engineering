@@ -1,9 +1,13 @@
 ---
 import { Icon } from "astro-icon";
+import { Picture, Image } from "@astrojs/image/components";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
 import BaseLayout from "../Layout/BaseLayout.astro";
-
 import Sectors from "../components/index/sectors.astro";
+
+import structimg from "../images/ptrn-girders.jpeg";
+import civilimg from "../images/bird-view.jpeg";
+import bimimg from "../images/bim-metro.jpeg";
 ---
 
 <BaseLayout title="Home Page">
@@ -16,21 +20,8 @@ import Sectors from "../components/index/sectors.astro";
   </p>
 
   <div class="flex flex-col mt-12 sm:mt-32 max-w-7xl">
-    <!-- <div class="mt-12 grid sm:grid-cols-2 justify-center items-center max-w-7xl">
-      <div class="max-w-sm p-6 sm:p-8 text-white bg-zinc-800">
-        <h1 class="text-2xl">Structural Engineering</h1>
-        <p>
-          We specialise in dtructural the design and analysis. Our team employs
-          advanced software and techniques to develop safe, efficient, and
-          cost-effective structural designs.
-        </p>
-      </div>
-      <img class="relative -z-10 max-w-lg" 
-      src="/assets/ptrn-girders.jpeg" />
-    </div> -->
-
     <div
-      class="flex flex-wrap-reverse  items-center max-w-7xl overflow-hidden">
+      class="flex flex-wrap-reverse justify-end items-center max-w-7xl overflow-hidden">
       <div
         class="relative left-0 lg:left-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
         <h1 class="text-2xl">Structural Engineering</h1>
@@ -40,12 +31,28 @@ import Sectors from "../components/index/sectors.astro";
           cost-effective structural designs.
         </p>
       </div>
-      <img class="relative -z-10 max-w-lg rounded-xl" src="/assets/ptrn-girders.jpeg" />
+      <Image 
+      class="relative -z-10 max-w-lg rounded-xl" 
+      src={structimg}
+      aspectRatio="18:13"
+      width={600}
+      height={433}
+      format="avif"
+      alt="structures"
+       />
     </div>
 
     <div
-      class="lg:mt-12 flex flex-wrap justify-end  items-center max-w-7xl overflow-hidden">
-      <img class="relative -z-10 max-w-lg" src="/assets/bird-view.jpeg" />
+      class="lg:mt-12 flex flex-wrap justify-start  items-center max-w-7xl overflow-hidden">
+      <Image 
+      class="relative -z-10 max-w-lg rounded-xl" 
+      src={civilimg}
+      aspectRatio="18:13"
+      width={600}
+      height={433}
+      format="avif"
+      alt="structures"
+       />
       <div
         class="relative right-0 lg:right-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
         <h1 class="text-2xl">Civil Engineering</h1>
@@ -58,7 +65,7 @@ import Sectors from "../components/index/sectors.astro";
     </div>
 
     <div
-      class="lg:mt-12 flex flex-wrap-reverse  items-center max-w-7xl overflow-hidden">
+      class="lg:mt-12 flex flex-wrap-reverse justify-end  items-center max-w-7xl overflow-hidden">
       <div
         class="relative left-0 lg:left-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
         <h1 class="text-2xl">Digital BIM</h1>
@@ -66,7 +73,15 @@ import Sectors from "../components/index/sectors.astro";
         <p class="font-bold">Management/Coordination</p>
         <p class="font-bold">Clash detection</p>
       </div>
-      <img class="relative -z-10 max-w-lg" src="/assets/bim-metro.jpeg" />
+      <Image 
+      class="relative -z-10 max-w-lg rounded-xl" 
+      src={bimimg}
+      aspectRatio="18:13"
+      width={600}
+      height={433}
+      format="avif"
+      alt="structures"
+       />
     </div>
   </div>
 

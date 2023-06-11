@@ -1,6 +1,6 @@
 ---
 import { Picture, Image } from "@astrojs/image/components";
-import pattern from "../../../public/ptrn-triangle.jpeg";
+import pattern from "../../images/ptrn-triangle.jpeg";
 
 const widths = [450, 800, 1200];
 const sizes = "100vw";
@@ -36,9 +36,12 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
         </div>
       </div>
       <div class="relative mt-16 h-36 sm:h-40 lg:h-80 lg:mt-8">
-        <Image
+        <Picture
         class="absolute left-0 top-0 w-[57rem] max-w-none rounded-3xl bg-white/5 ring-1 ring-white/10"
         src={pattern}
+        aspectRatio="76:55"
+        widths={[400,800,1000]}
+        format="avif"
         alt="Triangle Patterns"
       />
       </div>

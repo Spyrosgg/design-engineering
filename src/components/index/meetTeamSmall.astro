@@ -1,7 +1,7 @@
 ---
 import { Picture, Image } from "@astrojs/image/components";
-import profileA from "../../../public/profileA.png"
-import profileB from "../../../public/profileB.png"
+import profileA from "../../images/profileA.png"
+import profileB from "../../images/profileB.png"
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
 // import profilePicA from "../../assets/profileA.png";
 // import profilePicB from "../../assets/profileB.png";
@@ -33,10 +33,10 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
           <!-- <Image class="h-24 w-24 rounded-full" src={profilePicA} alt="Spyros" /> -->
           <a href="/about#meet-our-team">
             <Picture
-            class="m-auto mb-1 h-auto max-w-[15rem] md:max-w-xs p-4 sm:p-8 rounded-full"
+            class="h-24 w-24 rounded-full"
             src={profileA}
             alt="Diogo"
-            widths={[200,300]}
+            widths={[50,100,200,300]}
             aspectRatio="1:1"
             sizes="(max-width: 800px) 100vw, 620px"
             loading="eager"
@@ -57,10 +57,10 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
             <!-- <Image class="h-24 w-24 rounded-full" src={profilePicB} alt="Spyros" /> -->
             <a href="/about#meet-our-team">
               <Picture
-              class="m-auto mb-1 h-auto max-w-[15rem] md:max-w-xs p-4 sm:p-8 rounded-full"
+              class="h-24 w-24 rounded-full"
               src={profileB}
               alt="Spyros"
-              widths={[200,300]}
+              widths={[50,100,200,300]}
               aspectRatio="1:1"
               sizes="(max-width: 800px) 100vw, 620px"
               loading="eager"
