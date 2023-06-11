@@ -10,7 +10,7 @@ module.exports = {
         sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
       },
       animation: {
-        fade: 'fadeIn 3s ease-in-out',
+        fade: 'fadeIn 5s ease-in-out',
       },
       keyframes: {
         fadeIn: {
