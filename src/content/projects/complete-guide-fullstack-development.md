@@ -1,12 +1,16 @@
 ---
+layout: ../../Layout/BaseLayout.astro
+draft: false
 title: "Enfield Care Home"
-description: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
+description: ""
 image: {
-    src: "../../images/projects/enfield_care_home.jpg",
+    src: "../../images/projects/ECH/ECH_photo_main.jpg",
     alt: "Enfield Care Home"
 }
 period: "2014-2015"
 category: "Health"
+client: "Enfield County Council"
+location: "Colchester, UK"
 member: "Spyros Gavriilidis"
 tags: [UK, health]
 ---
