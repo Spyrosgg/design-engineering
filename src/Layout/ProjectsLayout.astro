@@ -5,7 +5,7 @@ import Footer from "../components/footer.astro";
 import { SITE_TITLE,SITE_TITLE_SMALL } from "../consts";
 
 const { site } = Astro;
-// const image = new URL("social.jpg", site);
+const {frontmatter} = Astro.props;
 const description =
   "Exceptional structural engineering consultancy services that deliver robust and innovative solutions for your projects.";
 ---
@@ -36,6 +36,11 @@ const description =
   >
     <Header />
     <div class="relative max-w-7xl m-auto mt-16 px-4 md:px-24 sm:px-16 ">
+
+      <h1>{frontmatter.title}</h1>
+      <h2>Member: {frontmatter.member}</h2>
+      <p>{frontmatter.description}</p>
+
       <slot />
     </div>
     <Footer />

@@ -1,14 +1,13 @@
 ---
-layout: ../../Layout/BaseLayout.astro
+layout: ../../Layout/projectsLayout.astro
 draft: false
 title: "Enfield Care Home"
-description: ""
+description: "Three-storey new-build care home centre."
 image: {
     src: "../../images/projects/ECH/ECH_photo_main.jpg",
     alt: "Enfield Care Home"
 }
 period: "2014-2015"
-category: "Health"
 client: "Enfield County Council"
 location: "Colchester, UK"
 member: "Spyros Gavriilidis"
