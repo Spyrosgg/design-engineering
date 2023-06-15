@@ -1,6 +1,7 @@
 ---
 layout: ../../Layout/projectsLayout.astro
 draft: false
+featured: true
 title: "Enfield Care Home"
 description: "Three-storey new-build care home centre."
 image: {

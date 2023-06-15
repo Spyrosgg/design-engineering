@@ -3,40 +3,46 @@ import { Icon } from "astro-icon";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
 import BaseLayout from "../Layout/BaseLayout.astro";
 
-import {getCollection} from "astro:content";
-const projectPosts = await getCollection("projects");
+import { getCollection } from "astro:content";
+const projectPosts = await getCollection("projects", ({data})=>{
+    return !data.draft;
+});
 ---
 
 <BaseLayout title="Home Page">
-    <div class="relative">
-        <div id="experience-hero"
-            class="rounded-xl h-80 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-800 -z-10">
-            <div
-                class="rounded-xl absolute top-0 left-0 w-full h-80 bg-grid-dark -z-9 flex flex-col justify-center items-center">
-                <h1 class="text-4xl text-white mb-2">Our Experience</h1>
-                <p class="text-xl text-zinc-100 px-6">
-                    <span class="text-sky-600">Projects</span> that the team members
-                    have worked on.
-                </p>
-            </div>
-        </div>
-        <div class="grid sm:grid-cols-3 mt-12">
-            <h1 class="text-2xl mb-6">Projects</h1>
-            {
-                projectPosts.map(project =>(
-                    <h2 class="text-xl">{project.data.title}</h2>
-                    <p class="text-sm">{project.data.description}</p>
-                    <a href={`/projects/${project.slug}`}>Read more</a>
-                ))
-            }
-        </div>
-
-<article>
-    <a class="flex flex-col items-center" href="">
-
-
-    </a>
-</article>
-
+  <div class="relative">
+    <div
+      id="experience-hero"
+      class="-z-10 h-80 rounded-xl bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-800"
+    >
+      <div
+        class="bg-grid-dark -z-9 absolute left-0 top-0 flex h-80 w-full flex-col items-center justify-center rounded-xl"
+      >
+        <h1 class="mb-2 text-4xl text-white">Our Experience</h1>
+        <p class="px-6 text-xl text-zinc-100">
+          <span class="text-sky-600">Projects</span> that the team members have worked
+          on.
+        </p>
+      </div>
     </div>
+    <div class="mt-12 grid sm:grid-cols-3">
+      <h1 class="mb-6 text-2xl">Projects</h1>
+
+      <ul>
+        {
+          projectPosts.map((project) => (
+            <li>
+              <h2 class="text-xl">{project.data.}</h2>
+              <p class="text-sm">{project.data.description}</p>
+              <a href={`/projects/${project.slug}`}>Read more</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <article>
+      <a class="flex flex-col items-center" href=""> </a>
+    </article>
+  </div>
 </BaseLayout>
