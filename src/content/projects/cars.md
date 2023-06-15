@@ -8,8 +8,8 @@ image: {
     alt: "CARS"
 }
 period: "2014-2015"
-client: "Enfield County Council"
-location: "Colchester, UK"
+client: "Croydon Council"
+location: "Croydon, Gre"
 member: "Spyros Gavriilidis"
 tags: [UK, health]
 ---
