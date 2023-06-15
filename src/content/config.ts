@@ -13,7 +13,7 @@ const projectsCollection = defineCollection({
       }),
     draft: z.boolean(),
     description: z.string(),
-    period: z.date(),
+    period: z.string(),
     client: z.string(),
     location: z.string(),
     member: z.enum(['Spyros Gavriilidis', 'Diogo Pereira']),
@@ -22,5 +22,6 @@ const projectsCollection = defineCollection({
 
 // 3. Export a single `collections` object to register your collection(s)
 export const collections = {
-  blog: projectsCollection,
+  'projects': projectsCollection,
+  // 'blog': blogCollection,
 };

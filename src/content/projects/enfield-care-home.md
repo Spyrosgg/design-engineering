@@ -1,11 +1,10 @@
 ---
-layout: ../../Layout/projectsLayout.astro
 draft: false
 featured: true
 title: "Enfield Care Home"
 description: "Three-storey new-build care home centre."
 image: {
-    src: "../../images/projects/ECH/ECH_photo_main.jpg",
+    src: "/images/projects/ECH/ECH_photo_main.jpg",
     alt: "Enfield Care Home"
 }
 period: "2014-2015"
