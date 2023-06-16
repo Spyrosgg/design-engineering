@@ -4,7 +4,7 @@ featured: true
 title: "Croydon Area Remodelling Scheme"
 description: "Three-storey new-build care home centre."
 image: {
-    src: "/images/projects/CARS/arch-platform-view.jpg",
+    src: "/images/projects/CARS/arch-main-entrance.webp",
     alt: "CARS"
 }
 period: "2014-2015"
