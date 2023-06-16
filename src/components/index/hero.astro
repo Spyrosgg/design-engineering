@@ -5,8 +5,11 @@ import bridge from "../../images/bridge-full2.png";
 
 <section class="bg-gradient-to-t from-[#F2F2F2] to-[#F5F5F5] h-[calc(100vh-5rem)]">
   <div class="relative flex justify-between">
-
-    <div class="textContainer h-12 z-10 mt-16 ml-6 sm:ml-16 lg:ml-28 max-w-sm">
+    
+    <div class="absolute top-0 right-0">
+      <Picture class="inset-0 h-[calc(100vh-5rem)] object-cover" src={bridge} alt="bridge" widths={[400, 800, 1400]} aspectRatio="575:766" sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
+    </div>
+    <div class="textContainer z-10 h-12 mt-16 ml-6 sm:ml-16 lg:ml-28 max-w-sm">
       <h1 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-6xl">
         Engineering a better Future, <span class="text-sky-600">Together</span>
       </h1>
@@ -16,9 +19,6 @@ import bridge from "../../images/bridge-full2.png";
       </div>
     </div>
 
-    <div class="absolute top-0 right-0">
-      <Picture class="-z-10 inset-0 h-[calc(100vh-5rem)] object-cover" src={bridge} alt="bridge" widths={[400, 800, 1400]} aspectRatio="575:766" sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
-    </div>
 
   </div>-
 </section>
