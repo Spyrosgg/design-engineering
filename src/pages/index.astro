@@ -12,23 +12,26 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 
 <IndexLayout title="Home Page">
   <Hero />
-  <div class="relative max-w-7xl m-auto px-4 md:px-24 sm:px-16">
+  <div class="relative m-auto max-w-7xl px-4 sm:px-16 md:px-24">
     <!-- MAIN -->
-    <div class="mt-8 sm:mt-24 flex flex-col sm:flex-row gap-6 justify-around">
-      <h1 class="text-4xl min-w-[160px]">Better by design</h1>
+    <div class="mt-8 flex flex-col justify-around gap-6 sm:mt-24 sm:flex-row">
+      <h1 class="min-w-[160px] text-4xl">Better by design</h1>
       <p class="sm:max-w-md">
-        At <span class="font-bold">{SITE_TITLE}</span>, we offer a wide range of professional services in the field
-        of <span class="font-semibold">Structural and Civil engineering</span>, as well as cutting-edge <span class="font-semibold">BIM</span> (Building
-        Information Modeling) solutions. With our expertise and
-        commitment to excellence, we ensure that every structure we work on
-        stands strong, with a solid foundation for success.
+        At <span class="font-bold">{SITE_TITLE}</span>, we offer a wide range of
+        professional services in the field of <span class="font-semibold"
+          >Structural and Civil engineering</span
+        >, as well as cutting-edge <span class="font-semibold">BIM</span> (Building
+        Information Modeling) solutions. With our expertise and commitment to excellence,
+        we ensure that every structure we work on stands strong, with a solid foundation
+        for success.
       </p>
     </div>
 
     <Sectors />
 
     <div
-      class="mt-8 sm:mt-24 flex flex-col-reverse sm:flex-row gap-6 justify-around">
+      class="mt-8 flex flex-col-reverse justify-around gap-6 sm:mt-24 sm:flex-row"
+    >
       <p class="sm:max-w-md">
         When you choose <span class="font-bold">{SITE_TITLE}</span> for your engineering
         needs, you can expect more than just technical expertise. You can expect
@@ -39,21 +42,25 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
       </p>
 
       <div class="flex flex-col items-start justify-start">
-        <div class="text-4xl min-w-[220px]">Discover the Difference</div>
+        <div class="min-w-[220px] text-4xl">Discover the Difference</div>
         <div class="mt-4 flex flex-col items-end">
-          <span class="relative top-2 left-1 flex h-3 w-3">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-500 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-600"></span>
+          <span class="relative left-1 top-2 flex h-3 w-3">
+            <span
+              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"
+            ></span>
+            <span class="relative inline-flex h-3 w-3 rounded-full bg-sky-600"
+            ></span>
           </span>
           <!-- class="group inline-flex justify-center rounded-lg shadow-sm text-sm font-semibold py-3 px-4 bg-white text-zinc-800 ring-1 ring-zinc-300 hover:text-white hover:bg-zinc-800 hover:ring-zinc-900" -->
           <a
-          class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white text-zinc-800 shadow-sm ring-1 ring-zinc-700/10 hover:bg-zinc-50"
-          href="/contact">
-          Get in touch &nbsp;<span
-          aria-hidden="true"
-          class="text-zinc/50  sm:inline">→</span
+            class="inline-flex justify-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-zinc-800 shadow-sm ring-1 ring-zinc-700/10 hover:bg-zinc-50"
+            href="/contact"
           >
-        </a>
+            Get in touch &nbsp;<span
+              aria-hidden="true"
+              class="text-zinc/50 sm:inline">→</span
+            >
+          </a>
         </div>
       </div>
     </div>

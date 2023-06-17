@@ -19,11 +19,13 @@ import bimimg from "../images/bim-metro.jpeg";
     to meet your project's specific needs.
   </p>
 
-  <div class="flex flex-col mt-12 sm:mt-32 max-w-7xl">
+  <div class="mt-12 flex max-w-7xl flex-col sm:mt-32">
     <div
-      class="flex flex-wrap-reverse justify-end items-center max-w-7xl overflow-hidden">
+      class="flex max-w-7xl flex-wrap-reverse items-center justify-end overflow-hidden"
+    >
       <div
-        class="relative left-0 lg:left-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
+        class="relative bottom-12 left-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:left-12"
+      >
         <h1 class="text-2xl">Structural Engineering</h1>
         <p>
           We specialise in dtructural the design and analysis. Our team employs
@@ -31,30 +33,32 @@ import bimimg from "../images/bim-metro.jpeg";
           cost-effective structural designs.
         </p>
       </div>
-      <Image 
-      class="relative -z-10 max-w-lg rounded-xl" 
-      src={structimg}
-      aspectRatio="18:13"
-      width={600}
-      height={433}
-      format="avif"
-      alt="structures"
-       />
+      <Image
+        class="relative -z-10 max-w-lg rounded-xl"
+        src={structimg}
+        aspectRatio="18:13"
+        width={600}
+        height={433}
+        format="avif"
+        alt="structures"
+      />
     </div>
 
     <div
-      class="lg:mt-12 flex flex-wrap justify-start  items-center max-w-7xl overflow-hidden">
-      <Image 
-      class="relative -z-10 max-w-lg rounded-xl" 
-      src={civilimg}
-      aspectRatio="18:13"
-      width={600}
-      height={433}
-      format="avif"
-      alt="structures"
-       />
+      class="flex max-w-7xl flex-wrap items-center justify-start overflow-hidden lg:mt-12"
+    >
+      <Image
+        class="relative -z-10 max-w-lg rounded-xl"
+        src={civilimg}
+        aspectRatio="18:13"
+        width={600}
+        height={433}
+        format="avif"
+        alt="structures"
+      />
       <div
-        class="relative right-0 lg:right-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
+        class="relative bottom-12 right-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:right-12"
+      >
         <h1 class="text-2xl">Civil Engineering</h1>
         <p>
           Our civil engineering services encompass site development, grading,
@@ -65,23 +69,25 @@ import bimimg from "../images/bim-metro.jpeg";
     </div>
 
     <div
-      class="lg:mt-12 flex flex-wrap-reverse justify-end  items-center max-w-7xl overflow-hidden">
+      class="flex max-w-7xl flex-wrap-reverse items-center justify-end overflow-hidden lg:mt-12"
+    >
       <div
-        class="relative left-0 lg:left-12 bottom-12 lg:bottom-0 w-80 p-6 sm:p-8 text-white bg-zinc-800">
+        class="relative bottom-12 left-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:left-12"
+      >
         <h1 class="text-2xl">Digital BIM</h1>
         <p class="font-bold">3D Modeling</p>
         <p class="font-bold">Management/Coordination</p>
         <p class="font-bold">Clash detection</p>
       </div>
-      <Image 
-      class="relative -z-10 max-w-lg rounded-xl" 
-      src={bimimg}
-      aspectRatio="18:13"
-      width={600}
-      height={433}
-      format="avif"
-      alt="structures"
-       />
+      <Image
+        class="relative -z-10 max-w-lg rounded-xl"
+        src={bimimg}
+        aspectRatio="18:13"
+        width={600}
+        height={433}
+        format="avif"
+        alt="structures"
+      />
     </div>
   </div>
 
@@ -93,7 +99,7 @@ import bimimg from "../images/bim-metro.jpeg";
   </div>
 
   <div class="mt-6 sm:mt-12">
-    <h1 class="text-2xl mb-24">
+    <h1 class="mb-24 text-2xl">
       We offer a range of services in various sectors
     </h1>
     <Sectors />

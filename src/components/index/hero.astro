@@ -1,24 +1,42 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import bridge from "../../images/bridge-full2.png";
+// import bridge from "../../images/bridge-full2.png";
+import bridge from "../../images/bridge.jpeg";
 ---
 
-<section class="bg-gradient-to-t from-[#F2F2F2] to-[#F5F5F5] h-[calc(100vh-5rem)]">
-  <div class="relative flex justify-between">
-    
-    <div class="absolute top-0 right-0">
-      <Picture class="inset-0 h-[calc(100vh-5rem)] object-cover" src={bridge} alt="bridge" widths={[400, 800, 1400]} aspectRatio="575:766" sizes="(max-width: 800px) 100vw, 620px" loading="eager" format="avif" />
+<section
+  class="h-[calc(100vh-5rem)] bg-gradient-to-t from-[#F2F2F2] to-[#F5F5F5]"
+>
+  <div class="relative">
+    <div class="absolute right-0 top-0">
+      <Picture
+        class="inset-0 h-[calc(100vh-72px)] object-cover"
+        src={bridge}
+        alt="bridge"
+        widths={[400, 800, 1400]}
+        aspectRatio="575:766"
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+        format="avif"
+      />
     </div>
-    <div class="textContainer z-10 h-12 mt-16 ml-6 sm:ml-16 lg:ml-28 max-w-sm">
+
+    <div class="textContainer z-10 ml-6 mt-16 h-12 max-w-sm sm:ml-16 lg:ml-28">
       <h1 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-6xl">
         Engineering a better Future, <span class="text-sky-600">Together</span>
       </h1>
-      <p class="pt-6 text-xl">Designed from the ground up to bridge the gap between your vision and reality</p>
+      <p class="pt-6 text-xl">
+        Designed from the ground up to bridge the gap between your vision and
+        reality
+      </p>
       <div class="pt-6">
-        <a class="rounded-lg px-4 py-3 text-sm font-semibold text-white shadow-xl bg-zinc-800 hover:bg-sky-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-600" href="/services"> Check our services</a>
+        <a
+          class="rounded-lg bg-zinc-800 px-4 py-3 text-sm font-semibold text-white shadow-xl hover:bg-sky-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-600"
+          href="/services"
+        >
+          Check our services</a
+        >
       </div>
     </div>
-
-
-  </div>-
+  </div>
 </section>

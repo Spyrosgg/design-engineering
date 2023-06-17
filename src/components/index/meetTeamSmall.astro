@@ -1,7 +1,7 @@
 ---
 import { Picture, Image } from "@astrojs/image/components";
-import profileA from "../../images/profileA.png"
-import profileB from "../../images/profileB.png"
+import profileA from "../../images/profileA.png";
+import profileB from "../../images/profileB.png";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
 // import profilePicA from "../../assets/profileA.png";
 // import profilePicB from "../../assets/profileB.png";
@@ -16,7 +16,8 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
         Building on 20+ Years of Engineering Expertise. &nbsp;
         <a
           class="inline-flex justify-center text-sm font-semibold text-zinc-800 hover:text-zinc-400"
-          href="/design-engineering/about">
+          href="/design-engineering/about"
+        >
           Learn more &nbsp;<span
             aria-hidden="true"
             class="text-zinc/50 sm:inline">→</span
@@ -26,22 +27,23 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
     </div>
     <ul
       role="list"
-      class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+      class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+    >
       <!-- People -->
       <li>
         <div class="flex items-center gap-x-6">
           <!-- <Image class="h-24 w-24 rounded-full" src={profilePicA} alt="Spyros" /> -->
           <a href="/about#meet-our-team">
             <Picture
-            class="h-24 w-24 rounded-full"
-            src={profileA}
-            alt="Diogo"
-            widths={[50,100,200,300]}
-            aspectRatio="1:1"
-            sizes="(max-width: 800px) 100vw, 620px"
-            loading="eager"
-            format="avif"
-          />
+              class="h-24 w-24 rounded-full"
+              src={profileA}
+              alt="Diogo"
+              widths={[50, 100, 200, 300]}
+              aspectRatio="1:1"
+              sizes="(max-width: 800px) 100vw, 620px"
+              loading="eager"
+              format="avif"
+            />
           </a>
           <div>
             <h2 class="text-xl">Diogo Pereira</h2>
@@ -57,15 +59,15 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
             <!-- <Image class="h-24 w-24 rounded-full" src={profilePicB} alt="Spyros" /> -->
             <a href="/about#meet-our-team">
               <Picture
-              class="h-24 w-24 rounded-full"
-              src={profileB}
-              alt="Spyros"
-              widths={[50,100,200,300]}
-              aspectRatio="1:1"
-              sizes="(max-width: 800px) 100vw, 620px"
-              loading="eager"
-              format="avif"
-            />
+                class="h-24 w-24 rounded-full"
+                src={profileB}
+                alt="Spyros"
+                widths={[50, 100, 200, 300]}
+                aspectRatio="1:1"
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+                format="avif"
+              />
             </a>
             <div>
               <h2 class="text-xl">Spyros Gavriilidis</h2>

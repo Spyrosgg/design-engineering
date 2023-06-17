@@ -3,17 +3,17 @@ draft: false
 featured: true
 title: "Crossrail, Farringdon station (FAR)"
 description: "Underground Rail Station."
-image: {
+image:
+  {
     src: "/images/projects/crossrail/farringdon-entrance.jpg",
-    alt: "Farringdon Entrance"
-}
+    alt: "Farringdon Entrance",
+  }
 period: "2014-2015"
 client: "Enfield County Council"
 location: "Colchester, UK"
 member: "Spyros Gavriilidis"
 tags: [UK, health]
 ---
-
 
 ## Lead Structures Engineer
 
