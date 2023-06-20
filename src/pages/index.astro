@@ -1,5 +1,6 @@
 ---
-import IndexLayout from "../Layout/IndexLayout.astro";
+import Layout from "../Layout/BaseLayout.astro";
+import Container from "../components/container.astro";
 
 import Hero from "../components/index/hero.astro";
 import Sectors from "../components/index/sectors.astro";
@@ -10,11 +11,11 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
 const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 ---
 
-<IndexLayout title="Home Page">
+<Layout title="Home Page">
   <Hero />
-  <div class="relative m-auto max-w-7xl px-4 sm:px-16 md:px-24">
+  <Container>
     <!-- MAIN -->
-    <div class="mt-8 flex flex-col justify-around gap-6 sm:mt-24 sm:flex-row">
+    <div class="flex flex-col -mt-[72px] justify-around gap-6 sm:flex-row">
       <h1 class="min-w-[160px] text-4xl">Better by design</h1>
       <p class="sm:max-w-md">
         At <span class="font-bold">{SITE_TITLE}</span>, we offer a wide range of
@@ -30,8 +31,7 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
     <Sectors />
 
     <div
-      class="mt-8 flex flex-col-reverse justify-around gap-6 sm:mt-24 sm:flex-row"
-    >
+      class="mt-8 flex flex-col-reverse justify-around gap-6 sm:mt-24 sm:flex-row">
       <p class="sm:max-w-md">
         When you choose <span class="font-bold">{SITE_TITLE}</span> for your engineering
         needs, you can expect more than just technical expertise. You can expect
@@ -54,8 +54,7 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
           <!-- class="group inline-flex justify-center rounded-lg shadow-sm text-sm font-semibold py-3 px-4 bg-white text-zinc-800 ring-1 ring-zinc-300 hover:text-white hover:bg-zinc-800 hover:ring-zinc-900" -->
           <a
             class="inline-flex justify-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-zinc-800 shadow-sm ring-1 ring-zinc-700/10 hover:bg-zinc-50"
-            href="/contact"
-          >
+            href="/contact">
             Get in touch &nbsp;<span
               aria-hidden="true"
               class="text-zinc/50 sm:inline">→</span
@@ -68,6 +67,6 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
     <MeetTheTeamSmall />
 
     <!-- MAIN -->
-  </div>
+  </Container>
   <CTA />
-</IndexLayout>
+</Layout>

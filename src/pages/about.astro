@@ -1,7 +1,8 @@
 ---
 import { Picture, Image } from "@astrojs/image/components";
 import ikigai from "../images/IKIGAI.svg";
-import BaseLayout from "../Layout/BaseLayout.astro";
+import Layout from "../Layout/BaseLayout.astro";
+import Container from "../components/container.astro";
 
 import WhyUs from "../components/about/whyUs.astro";
 import MeetTheTeam from "../components/about/meetTeam.astro";
@@ -10,41 +11,41 @@ import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
 const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 ---
 
-<BaseLayout title="Home Page">
-  <p>
-    At <span class="font-bold">{SITE_TITLE}</span>, we are a dynamic and
-    experienced structural engineering consultancy founded by two passionate
-    engineers. With a combined experience of over 20 years in the field, we have
-    developed a strong reputation for delivering exceptional engineering
-    solutions that stand the test of time.
-  </p>
-
-  <div
-    class="mt-16 flex flex-col items-center gap-8 md:flex-row md:justify-around"
-  >
-    <Image
-      class="max-w-xs"
-      src={ikigai}
-      alt="ikigai"
-      width={972}
-      height={950}
-      aspectRatio="1:1"
-    />
-    <div>
-      <h2 class="mb-0 text-lg">Our IKIGAI</h2>
-      <p class="mb-2 text-sm text-sky-600">
-        Ikigai (<span class="text-xs">lit.</span>'a reason for being')
-      </p>
-      <p class="max-w-xs">
-        We believe that every project deserves a solid foundation. Our
-        philosophy is rooted in a commitment to excellence, innovation, and
-        client satisfaction. We approach each project with dedication and
-        meticulous attention to detail, ensuring that our solutions are not only
-        technically sound but also practical, efficient, and tailored to our
-        clients' unique needs.
-      </p>
+<Layout title="About us">
+  <Container>
+    <p>
+      At <span class="font-bold">{SITE_TITLE}</span>, we are a dynamic and
+      experienced structural engineering consultancy founded by two passionate
+      engineers. With a combined experience of over 20 years in the field, we
+      have developed a strong reputation for delivering exceptional engineering
+      solutions that stand the test of time.
+    </p>
+    <div
+      class="mt-16 flex flex-col items-center gap-8 md:flex-row md:justify-around">
+      <Image
+        class="max-w-xs"
+        src={ikigai}
+        alt="ikigai"
+        width={972}
+        height={950}
+        aspectRatio="1:1"
+      />
+      <div>
+        <h2 class="mb-0 text-lg">Our IKIGAI</h2>
+        <p class="mb-2 text-sm text-sky-600">
+          Ikigai (<span class="text-xs">lit.</span>'a reason for being')
+        </p>
+        <p class="max-w-xs">
+          We believe that every project deserves a solid foundation. Our
+          philosophy is rooted in a commitment to excellence, innovation, and
+          client satisfaction. We approach each project with dedication and
+          meticulous attention to detail, ensuring that our solutions are not
+          only technically sound but also practical, efficient, and tailored to
+          our clients' unique needs.
+        </p>
+      </div>
     </div>
-  </div>
-  <WhyUs />
-  <MeetTheTeam />
-</BaseLayout>
+    <WhyUs />
+    <MeetTheTeam />
+  </Container>
+</Layout>

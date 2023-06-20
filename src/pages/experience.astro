@@ -2,62 +2,65 @@
 import { Icon } from "astro-icon";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
 import { Picture, Image } from "@astrojs/image/components";
-import BaseLayout from "../Layout/BaseLayout.astro";
+import Layout from "../Layout/BaseLayout.astro";
+import Container from "../components/container.astro";
 import testingimgage from "../images/projects/ECH/ECH_photo_main.jpg";
+
+/* Get collectio*/
 import { getCollection } from "astro:content";
 const projectPosts = await getCollection("projects", ({ data }) => {
   return !data.draft;
 });
 ---
 
-<BaseLayout title="Home Page">
-  <div class="bg-grid-light relative">
-    <div
-      id="experience-hero"
-      class="-z-10 h-80 rounded-xl bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-800"
-    >
+<Layout title="Home Page">
+  <Container>
+    <div class="bg-grid-light relative">
       <div
-        class="bg-grid-dark -z-9 absolute left-0 top-0 flex h-80 w-full flex-col items-center justify-center rounded-xl"
-      >
-        <h1 class="mb-2 text-4xl text-white">Our Experience</h1>
-        <p class="px-6 text-xl text-zinc-100">
-          <span class="text-sky-600">Projects</span> that the team members have worked
-          on.
-        </p>
+        id="experience-hero"
+        class="-z-10 h-80 rounded-xl bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-800">
+        <div
+          class="bg-grid-dark -z-9 absolute left-0 top-0 flex h-80 w-full flex-col items-center justify-center rounded-xl">
+          <h1 class="mb-2 text-4xl text-white">Our Experience</h1>
+          <p class="px-6 text-xl text-zinc-100">
+            <span class="text-sky-600">Projects</span> that the team members have
+            worked on.
+          </p>
+        </div>
       </div>
+      <h1 class="mb-6 text-2xl">Projects</h1>
+      <ul>
+        <div class="mt-24 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {
+            projectPosts.map((project, index) => (
+              <li>
+                <a href={`/projects/${project.slug}`}>
+                  <Picture
+                    src={project.data.image.src}
+                    alt={project.data.image.alt}
+                    sizes="(max-width: 800px) 100vw, 800px"
+                    widths={[200, 400, 800]}
+                    aspectRatio="16:11"
+                    format="avif"
+                    background="#ffffff"
+                    fit="cover"
+                    position="center"
+                    loading={index <= 2 ? "eager" : "lazy"}
+                    decoding={index <= 2 ? "sync" : "async"}
+                    class="w-full rounded-md"
+                  />
+                  <h2 class="text-xl">{project.data.title}</h2>
+                  <p class="text-sm">{project.data.description}</p>
+                  <a href={`/projects/${project.slug}`}>Read more</a>
+                </a>
+              </li>
+            ))
+          }
+        </div>
+      </ul>
+      <article>
+        <a class="flex flex-col items-center" href=""> </a>
+      </article>
     </div>
-    <h1 class="mb-6 text-2xl">Projects</h1>
-
-    <ul>
-      <div class="mt-24 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {
-          projectPosts.map((project, index) => (
-            <li>
-              <Picture
-                src={project.data.image.src}
-                alt={project.data.image.alt}
-                sizes="(max-width: 800px) 100vw, 800px"
-                widths={[200, 400, 800]}
-                aspectRatio="16:11"
-                format="avif"
-                background="#ffffff"
-                fit="cover"
-                position="center"
-                loading={index <= 2 ? "eager" : "lazy"}
-                decoding={index <= 2 ? "sync" : "async"}
-                class="w-full rounded-md"
-              />
-              <h2 class="text-xl">{project.data.title}</h2>
-              <p class="text-sm">{project.data.description}</p>
-              <a href={`/projects/${project.slug}`}>Read more</a>
-            </li>
-          ))
-        }
-      </div>
-    </ul>
-
-    <article>
-      <a class="flex flex-col items-center" href=""> </a>
-    </article>
-  </div>
-</BaseLayout>
+  </Container>
+</Layout>

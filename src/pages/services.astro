@@ -2,7 +2,9 @@
 import { Icon } from "astro-icon";
 import { Picture, Image } from "@astrojs/image/components";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../consts";
-import BaseLayout from "../Layout/BaseLayout.astro";
+import Layout from "../Layout/BaseLayout.astro";
+import Container from "../components/container.astro";
+
 import Sectors from "../components/index/sectors.astro";
 
 import structimg from "../images/ptrn-girders.jpeg";
@@ -10,98 +12,90 @@ import civilimg from "../images/bird-view.jpeg";
 import bimimg from "../images/bim-metro.jpeg";
 ---
 
-<BaseLayout title="Home Page">
-  <p>
-    At <span class="font-bold">{SITE_TITLE}</span>, we offer a wide range of e
-    in the field of structural and civil engineering, as well as cutting-edge
-    BIM (Building Information Modeling) and 3D modeling solutions. Our expert
-    team is dedicated to delivering innovative and reliable solutions tailored
-    to meet your project's specific needs.
-  </p>
-
-  <div class="mt-12 flex max-w-7xl flex-col sm:mt-32">
-    <div
-      class="flex max-w-7xl flex-wrap-reverse items-center justify-end overflow-hidden"
-    >
+<Layout title="Our services">
+  <Container>
+    <p>
+      At <span class="font-bold">{SITE_TITLE}</span>, we offer a wide range of e
+      in the field of structural and civil engineering, as well as cutting-edge
+      BIM (Building Information Modeling) and 3D modeling solutions. Our expert
+      team is dedicated to delivering innovative and reliable solutions tailored
+      to meet your project's specific needs.
+    </p>
+    <div class="mt-12 flex max-w-7xl flex-col sm:mt-32">
       <div
-        class="relative bottom-12 left-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:left-12"
-      >
-        <h1 class="text-2xl">Structural Engineering</h1>
-        <p>
-          We specialise in dtructural the design and analysis. Our team employs
-          advanced software and techniques to develop safe, efficient, and
-          cost-effective structural designs.
-        </p>
+        class="flex max-w-7xl flex-wrap-reverse items-center justify-end overflow-hidden">
+        <div
+          class="relative bottom-12 left-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:left-12">
+          <h1 class="text-2xl">Structural Engineering</h1>
+          <p>
+            We specialise in dtructural the design and analysis. Our team
+            employs advanced software and techniques to develop safe, efficient,
+            and cost-effective structural designs.
+          </p>
+        </div>
+        <Image
+          class="relative -z-10 max-w-lg rounded-xl"
+          src={structimg}
+          aspectRatio="18:13"
+          width={600}
+          height={433}
+          format="avif"
+          alt="structures"
+        />
       </div>
-      <Image
-        class="relative -z-10 max-w-lg rounded-xl"
-        src={structimg}
-        aspectRatio="18:13"
-        width={600}
-        height={433}
-        format="avif"
-        alt="structures"
-      />
-    </div>
-
-    <div
-      class="flex max-w-7xl flex-wrap items-center justify-start overflow-hidden lg:mt-12"
-    >
-      <Image
-        class="relative -z-10 max-w-lg rounded-xl"
-        src={civilimg}
-        aspectRatio="18:13"
-        width={600}
-        height={433}
-        format="avif"
-        alt="structures"
-      />
       <div
-        class="relative bottom-12 right-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:right-12"
-      >
-        <h1 class="text-2xl">Civil Engineering</h1>
-        <p>
-          Our civil engineering services encompass site development, grading,
-          drainage, and utility design for both residential and commercial
-          projects.
-        </p>
+        class="flex max-w-7xl flex-wrap items-center justify-start overflow-hidden lg:mt-12">
+        <Image
+          class="relative -z-10 max-w-lg rounded-xl"
+          src={civilimg}
+          aspectRatio="18:13"
+          width={600}
+          height={433}
+          format="avif"
+          alt="structures"
+        />
+        <div
+          class="relative bottom-12 right-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:right-12">
+          <h1 class="text-2xl">Civil Engineering</h1>
+          <p>
+            Our civil engineering services encompass site development, grading,
+            drainage, and utility design for both residential and commercial
+            projects.
+          </p>
+        </div>
       </div>
-    </div>
-
-    <div
-      class="flex max-w-7xl flex-wrap-reverse items-center justify-end overflow-hidden lg:mt-12"
-    >
       <div
-        class="relative bottom-12 left-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:left-12"
-      >
-        <h1 class="text-2xl">Digital BIM</h1>
-        <p class="font-bold">3D Modeling</p>
-        <p class="font-bold">Management/Coordination</p>
-        <p class="font-bold">Clash detection</p>
+        class="flex max-w-7xl flex-wrap-reverse items-center justify-end overflow-hidden lg:mt-12">
+        <div
+          class="relative bottom-12 left-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:left-12">
+          <h1 class="text-2xl">Digital BIM</h1>
+          <p class="font-bold">3D Modeling</p>
+          <p class="font-bold">Management/Coordination</p>
+          <p class="font-bold">Clash detection</p>
+        </div>
+        <Image
+          class="relative -z-10 max-w-lg rounded-xl"
+          src={bimimg}
+          aspectRatio="18:13"
+          width={600}
+          height={433}
+          format="avif"
+          alt="structures"
+        />
       </div>
-      <Image
-        class="relative -z-10 max-w-lg rounded-xl"
-        src={bimimg}
-        aspectRatio="18:13"
-        width={600}
-        height={433}
-        format="avif"
-        alt="structures"
-      />
     </div>
-  </div>
-
-  <div class="mt-12 lg:mt-32">
-    At <span class="font-bold">{SITE_TITLE}</span>, we are motivated by the
-    chance to make a difference in people's lives and improve their communities.
-    We take satisfaction in creating infrastructure that enhances quality of
-    life, promotes sustainability, and contributes to economic growth.
-  </div>
-
-  <div class="mt-6 sm:mt-12">
-    <h1 class="mb-24 text-2xl">
-      We offer a range of services in various sectors
-    </h1>
-    <Sectors />
-  </div>
-</BaseLayout>
+    <div class="mt-12 lg:mt-32">
+      At <span class="font-bold">{SITE_TITLE}</span>, we are motivated by the
+      chance to make a difference in people's lives and improve their
+      communities. We take satisfaction in creating infrastructure that enhances
+      quality of life, promotes sustainability, and contributes to economic
+      growth.
+    </div>
+    <div class="mt-6 sm:mt-12">
+      <h1 class="mb-24 text-2xl">
+        We offer a range of services in various sectors
+      </h1>
+      <Sectors />
+    </div>
+  </Container>
+</Layout>

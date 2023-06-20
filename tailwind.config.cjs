@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
 const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -12,7 +10,7 @@ module.exports = {
 
       animation: {
         fade: "fadeIn 5s ease-in-out",
-        'bounce-right': "bright 1s infinite",
+        "bounce-right": "bright 1s infinite",
       },
 
       keyframes: {
@@ -26,6 +24,6 @@ module.exports = {
         },
       },
     },
-    plugins: [require("@tailwindcss/forms")],
   },
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };

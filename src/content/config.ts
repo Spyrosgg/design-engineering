@@ -16,6 +16,7 @@ const projectsCollection = defineCollection({
     period: z.string(),
     client: z.string(),
     location: z.string(),
+    category: z.string().optional(),
     member: z.enum(["Spyros Gavriilidis", "Diogo Pereira"]),
   }),
 });

@@ -4,8 +4,8 @@ import { Picture } from "@astrojs/image/components";
 import bridge from "../../images/bridge.png";
 ---
 
-<section class="relative h-screen bg-whitez">
-  <div class="ml-6 pt-16 h-12 max-w-sm sm:ml-16 lg:ml-28">
+<section class="bg-whitez relative h-screen">
+  <div class="ml-6 h-12 max-w-sm pt-16 sm:ml-16 lg:ml-28">
     <h1 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-6xl">
       Engineering a better Future, <span class="text-sky-600">Together</span>
     </h1>
@@ -23,11 +23,11 @@ import bridge from "../../images/bridge.png";
   </div>
 
   <Picture
-    class="absolute -z-10 right-0 top-0 h-[calc(100vh-72px)] object-cover"
+    class="absolute right-0 top-0 -z-10 h-[calc(100vh-72px)] object-cover"
     src={bridge}
     alt="bridge"
     widths={[400, 800, 1400]}
-    sizes="(max-width: 800px) 100vw, 800px"
+    sizes="(max-width: 800px) 100vw"
     loading="eager"
     format="avif"
   />
