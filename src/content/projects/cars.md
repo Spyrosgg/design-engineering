@@ -20,3 +20,10 @@ NR GRIP stage 3. The scheme includes an addition of two main lines, a new high s
 
 - Design the concourse and podium structures over the platform - level that will support the OSD.
 - High level OSD high-rise building design.
+
+![cars2](<../../../public/images/projects/CARS/CARS 3D_2.png>)
+![Alt text](<../../../public/images/projects/CARS/CARS 3D.png>)
+
+<div class="flex flex-col items-center">
+<img src="../../../public/images/projects/CARS/CARS 3D_3.png" alt="drawing" width="300"/>
+</div>

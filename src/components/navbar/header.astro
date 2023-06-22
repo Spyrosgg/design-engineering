@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon";
-import logo from "/diagrid-1.svg";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
 
 /** Main menu items */
@@ -15,8 +14,7 @@ const navItems = [
 <header id="nav-header" class="z-50 bg-zinc-100">
   <nav
     class="mx-auto flex items-center justify-between p-4 lg:px-8"
-    aria-label="Global"
-  >
+    aria-label="Global">
     <!-- Logo -->
     <a href="/" class="-m-1.5 p-1.5">
       <div class="flex items-center">
@@ -24,18 +22,19 @@ const navItems = [
         <!-- <img class="w-9 h-9 mr-2" src="/MdiGrid.svg" alt="logo" /> -->
         <!-- <img class="w-8 h-8 mr-[0.1rem]" src="/diagrid-twr.svg" alt="logo" /> -->
         <!-- <img class="w-8 h-8 mr-[0.1rem]" src="/diagrid-h.svg" alt="logo" /> -->
-        <img
-          class="mr-[0.5rem] h-10 w-10 rotate-90 transform"
-          src="/giagrid-r.svg"
-          alt="logo"
-        />
+        <img class="mr-[0.5rem] h-10 w-10" src="/vv.svg" alt="logo" />
         <!-- <img class="w-8 h-8 mr-[0.1rem]" src="/diagrid-d.svg" alt="logo" /> -->
         <!-- <img class="w-8 h-8 mr-[0.1rem]" src="/diagrid-2.svg" alt="logo" /> -->
         <div class="flex flex-col lg:flex-1">
           <span class="sr-only">{SITE_TITLE}</span>
-          <div class="h-6 w-auto text-xl font-semibold">{SITE_TITLE}</div>
-          <p class="text-sm leading-4 text-zinc-600">design + engineering</p>
-          <!-- <div class="text-[0.7rem] text-zinc-400 leading-5 h-6 w-auto">COMPUTATION MEETS ELEGANCE</div> -->
+          <div class="w-auto text-2xl">
+            <span class="font-semibold">{SITE_TITLE}</span>
+            <span class="text-sky-600"> Design Engineering</span>
+          </div>
+          <!-- <p class="text-sm leading-4 text-zinc-600">design + engineering</p> -->
+          <!-- <div class="text-[0.7rem] text-zinc-400 leading-3 h-6 w-auto">
+            COMPUTATION MEETS ELEGANCE
+          </div> -->
         </div>
       </div>
     </a>
@@ -45,8 +44,7 @@ const navItems = [
       <button
         id="open-nav-btn"
         type="button"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-      >
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
         <span class="sr-only">Open main menu</span>
         <svg
           class="h-6 w-6"
@@ -54,8 +52,7 @@ const navItems = [
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          aria-hidden="true"
-        >
+          aria-hidden="true">
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -69,8 +66,7 @@ const navItems = [
         navItems.map(({ title, url }) => (
           <a
             class="rounded-lg px-2 py-1 text-sm font-semibold leading-6 text-zinc-800 hover:bg-zinc-200"
-            href={url}
-          >
+            href={url}>
             {title}
           </a>
         ))
@@ -86,13 +82,11 @@ const navItems = [
     id="menu-mobile"
     class="hidden md:hidden"
     role="dialog"
-    aria-modal="true"
-  >
+    aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div class="fixed inset-0 z-20"></div>
     <div
-      class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-zinc-200 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-    >
+      class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-zinc-200 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div class="flex items-center justify-between">
         <a href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">{SITE_TITLE}</span>
@@ -101,8 +95,7 @@ const navItems = [
         <button
           id="close-nav-btn"
           type="button"
-          class="-m-2.5 rounded-md p-2.5 text-gray-700"
-        >
+          class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
           <svg
             class="h-6 w-6"
@@ -110,8 +103,7 @@ const navItems = [
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -127,8 +119,7 @@ const navItems = [
                 navItems.map(({ title, url }) => (
                   <a
                     class="-mx-3 block rounded-lg px-4 py-2 text-base font-semibold leading-7 text-zinc-900 hover:bg-zinc-100"
-                    href={url}
-                  >
+                    href={url}>
                     {title}
                   </a>
                 ))
