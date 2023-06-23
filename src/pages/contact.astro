@@ -27,7 +27,7 @@ import Container from "../components/container.astro";
       <div
         class="m-auto mt-12 grid max-w-2xl items-center justify-center gap-4 overflow-hidden md:grid-cols-2">
         <div class="bg-sky-600 p-6 text-xl font-semibold text-white">
-          <div class="flex gap-4">
+          <div class="TEL flex gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -41,9 +41,25 @@ import Container from "../components/container.astro";
                 d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
               ></path>
             </svg>
-            <a href=`tel:+44${TEL_UK}`>+44 (0) {TEL_UK}</a>
+            <a href=`tel:+44${TEL_UK}`>UK: +44 {TEL_UK}</a>
           </div>
-          <div class="mt-6 flex gap-4">
+          <div class="TEL flex mt-6 gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6 text-white">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
+              ></path>
+            </svg>
+            <a href=`tel:+30${TEL_GR}`>GR: +30 {TEL_GR}</a>
+          </div>
+          <div class="EMAIL mt-6 flex gap-4">
             <div class="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +75,8 @@ import Container from "../components/container.astro";
                 ></path>
               </svg>
             </div>
-            <a href=`mailto:info@${EMAIL}`>infog@{EMAIL}</a>
+            <a href=`mailto:vantagede@outlook.com`>infog@{EMAIL}</a>
+            <!-- <a href=`mailto:info@${EMAIL}`>infog@{EMAIL}</a> -->
           </div>
         </div>
         <div class="flex justify-center overflow-hidden rounded-lg">
