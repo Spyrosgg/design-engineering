@@ -16,7 +16,4 @@
     background-image: linear-gradient(to right, #27272a 1px, transparent 1px),
       linear-gradient(to bottom, #27272a 1px, transparent 1px);
   }
-  .md-content > h2 {
-    @apply text-lg;
-  }
 }
