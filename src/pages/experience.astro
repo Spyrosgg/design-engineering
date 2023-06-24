@@ -16,7 +16,7 @@ const projectPosts = await getCollection("projects", ({ data }) => {
 <Layout title="Home Page">
   <Container>
     <div class="relative">
-      <div
+      <!-- <div
         id="experience-hero"
         class="-z-10 h-80 rounded-xl bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-800">
         <div
@@ -27,8 +27,25 @@ const projectPosts = await getCollection("projects", ({ data }) => {
             worked on.
           </p>
         </div>
+      </div> -->
+
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div>
+          <div class="text-4xl font-semibold">Our Portfolio</div>
+          <p class="max-w-[280px] text-lg font-normal">
+            Projects the team members have worked on.
+          </p>
+        </div>
+        <div class="text-lg font-semibold">
+          Our diverse portfolio is the result of a combination of over two
+          decades of hard work and innovation. The work ranges from buildings to
+          bridges, from buried underground to high-rise structures. Our clients
+          and collaborators are similarly diverse: from individuals to
+          developersoups, to public companies and goverment.
+        </div>
       </div>
-      <h1 class="mb-6 text-2xl">Projects</h1>
+
+      <h1 class="mb-6 mt-24 border-b-2 text-3xl font-semibold">Projects</h1>
       <ul>
         <div class="mt-24 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {

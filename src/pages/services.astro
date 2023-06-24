@@ -15,11 +15,11 @@ import bimimg from "../images/bim-metro.jpeg";
 <Layout title="Our services">
   <Container>
     <p>
-      At <span class="font-bold">{SITE_TITLE}</span>, we offer a wide range of e
-      in the field of structural and civil engineering, as well as cutting-edge
-      BIM (Building Information Modeling) and 3D modeling solutions. Our expert
-      team is dedicated to delivering innovative and reliable solutions tailored
-      to meet your project's specific needs.
+      At <span class="font-bold">{SITE_TITLE}</span>, we offer a wide range of
+      professional services in the field of structural and civil engineering, as
+      well as cutting-edge BIM (Building Information Modeling) and 3D modeling
+      solutions. Our expert team is dedicated to delivering innovative and
+      reliable solutions tailored to meet your project's specific needs.
     </p>
     <div class="mt-12 flex max-w-7xl flex-col sm:mt-32">
       <div
@@ -27,11 +27,23 @@ import bimimg from "../images/bim-metro.jpeg";
         <div
           class="relative bottom-12 left-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:left-12">
           <h1 class="text-2xl">Structural Engineering</h1>
-          <p>
-            We specialise in dtructural the design and analysis. Our team
+          <ul class="list-disc">
+            <li class="font-bold">Building structurest</li>
+            <li class="font-bold">Bridges and Infrastructure</li>
+            <li class="font-bold">Low carbon structures</li>
+            <li class="font-bold">Timber engineering</li>
+            <li class="font-bold">Modern methods of construction</li>
+            <li class="font-bold">Parametric design</li>
+            <li class="font-bold">Basements</li>
+            <li class="font-bold">Specialist advice & Value engineering</li>
+            <li class="font-bold">Tall buildings</li>
+            <li class="font-bold">Strategic advice</li>
+            <!-- <li>
+            We specialise in structural the design and analysis. Our team
             employs advanced software and techniques to develop safe, efficient,
             and cost-effective structural designs.
-          </p>
+          </p> -->
+          </ul>
         </div>
         <Image
           class="relative -z-10 max-w-lg rounded-xl"
@@ -57,11 +69,18 @@ import bimimg from "../images/bim-metro.jpeg";
         <div
           class="relative bottom-12 right-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:right-12">
           <h1 class="text-2xl">Civil Engineering</h1>
-          <p>
+          <ul class="list-disc">
+            <li class="font-bold">Sustainable Drainage Strategies</li>
+            <li class="font-bold">
+              Strategic infrastructure advice and Master-planning
+            </li>
+            <li class="font-bold">Site-wide level design</li>
+            <!-- <li >
             Our civil engineering services encompass site development, grading,
             drainage, and utility design for both residential and commercial
             projects.
-          </p>
+          </p> -->
+          </ul>
         </div>
       </div>
       <div
@@ -69,10 +88,16 @@ import bimimg from "../images/bim-metro.jpeg";
         <div
           class="relative bottom-12 left-0 w-80 bg-zinc-800 p-6 text-white sm:p-8 lg:bottom-0 lg:left-12">
           <h1 class="text-2xl">Digital BIM</h1>
-          <p class="font-bold">3D Modeling</p>
-          <p class="font-bold">Management/Coordination</p>
-          <p class="font-bold">Clash detection</p>
+          <ul class="list-disc">
+            <li class="font-bold">Strategic BIM advice</li>
+            <li class="font-bold">3D Modeling</li>
+            <li class="font-bold">Management/Coordination</li>
+            <li class="font-bold">Clash detection</li>
+            <li class="font-bold">BIM execution plan (BEP)</li>
+            <li class="font-bold">Client-specific BIM strategy(EIR)</li>
+          </ul>
         </div>
+
         <Image
           class="relative -z-10 max-w-lg rounded-xl"
           src={bimimg}
@@ -96,6 +121,31 @@ import bimimg from "../images/bim-metro.jpeg";
         We offer a range of services in various sectors
       </h1>
       <Sectors />
+    </div>
+
+    <div class="mt-12 flex flex-col md:mt-24 md:flex-row md:items-center">
+      <div class="mr-8 min-w-[220px] text-4xl">Discover the Difference</div>
+
+      <div class="flex flex-col items-start">
+        <div class="mt-4 flex flex-col items-end md:mt-0">
+          <span class="relative left-1 top-2 flex h-3 w-3">
+            <span
+              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"
+            ></span>
+            <span class="relative inline-flex h-3 w-3 rounded-full bg-sky-600"
+            ></span>
+          </span>
+          <!-- class="group inline-flex justify-center rounded-lg shadow-sm text-sm font-semibold py-3 px-4 bg-white text-zinc-800 ring-1 ring-zinc-300 hover:text-white hover:bg-zinc-800 hover:ring-zinc-900" -->
+          <a
+            class="inline-flex justify-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-zinc-800 shadow-sm ring-1 ring-zinc-700/10 hover:bg-zinc-100"
+            href="/contact">
+            Get in touch &nbsp;<span
+              aria-hidden="true"
+              class="text-zinc/50 sm:inline">→</span
+            >
+          </a>
+        </div>
+      </div>
     </div>
   </Container>
 </Layout>

@@ -12,7 +12,7 @@ import Container from "../components/container.astro";
   <Container>
     <div class="-mt-12 flex justify-center overflow-hidden rounded-lg">
       <Picture
-        class="-z-10 object-none h-96 w-[100vw]"
+        class="-z-10 h-96 w-[100vw] object-none"
         src={escalator}
         widths={[200, 400, 800]}
         aspectRatio="5325:5264"
@@ -35,8 +35,10 @@ import Container from "../components/container.astro";
           are here to assist you.
         </p>
       </div>
+
+      {/* contacts */}
       <div
-        class="m-auto mt-12 max-w-sm overflow-hidden md:grid-cols-2 rounded-lg">
+        class="m-auto mt-12 max-w-xs overflow-hidden rounded-lg md:grid-cols-2">
         <div class="bg-sky-600 p-6 text-xl font-semibold text-white">
           <!-- <div class="TEL flex gap-4">
             <svg
@@ -77,7 +79,7 @@ import Container from "../components/container.astro";
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6">
+              class="h-6 w-6">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
