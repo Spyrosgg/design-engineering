@@ -43,23 +43,39 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
 
       <div class="flex flex-col items-start justify-start">
         <div class="min-w-[220px] text-4xl">Discover the Difference</div>
-        <div class="mt-4 flex flex-col items-end">
-          <span class="relative left-1 top-2 flex h-3 w-3">
-            <span
-              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"
-            ></span>
-            <span class="relative inline-flex h-3 w-3 rounded-full bg-sky-600"
-            ></span>
-          </span>
-          <!-- class="group inline-flex justify-center rounded-lg shadow-sm text-sm font-semibold py-3 px-4 bg-white text-zinc-800 ring-1 ring-zinc-300 hover:text-white hover:bg-zinc-800 hover:ring-zinc-900" -->
-          <a
-            class="inline-flex justify-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-zinc-800 shadow-sm ring-1 ring-zinc-700/10 hover:bg-zinc-100"
-            href="/contact">
-            Get in touch &nbsp;<span
-              aria-hidden="true"
-              class="text-zinc/50 sm:inline">→</span
+        <!-- btns -->
+        <!-- services btn -->
+        <div
+          class="sm:mt-4 flex gap-4 sm:flex-col sm:items-start lg:flex-row lg:items-end">
+          <!-- class="inline-flex mt-4 rounded-lg bg-zinc-800 px-4 py-3 text-sm font-semibold text-white shadow-xl hover:bg-sky-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-600" -->
+          <div class="mt-4 flex flex-col items-end sm:mt-0">
+            <a
+              class="inline-flex justify-center rounded-lg bg-zinc-50 px-4 py-3 text-sm font-semibold text-zinc-800 shadow-sm ring-1 ring-zinc-700/10 hover:bg-zinc-100"
+              href="/services">
+              Our services&nbsp;<span
+                aria-hidden="true"
+                class="text-zinc/50 sm:inline">→</span
+              ></a
             >
-          </a>
+          </div>
+          <!-- contact btn -->
+          <div class="mt-1 flex flex-col items-end sm:-mt-4">
+            <span class="relative left-1 top-2 flex h-3 w-3">
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75"
+              ></span>
+              <span class="relative inline-flex h-3 w-3 rounded-full bg-sky-600"
+              ></span>
+            </span>
+            <a
+              class="inline-flex justify-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-zinc-800 shadow-sm ring-1 ring-zinc-700/10 hover:bg-zinc-100"
+              href="/contact">
+              Get in touch &nbsp;<span
+                aria-hidden="true"
+                class="text-zinc/50 sm:inline">→</span
+              >
+            </a>
+          </div>
         </div>
       </div>
     </div>
