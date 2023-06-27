@@ -97,8 +97,9 @@ import Container from "../components/container.astro";
             </a>
           </div>
         </div>
+      </div>
 
-        <!-- <div class="mx-auto mt-24 max-w-xl">
+      <div class="mx-auto mt-24 max-w-2xl">
         <h2 class="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">
           Get in touch
         </h2>
@@ -110,13 +111,19 @@ import Container from "../components/container.astro";
         </p>
       </div>
 
-      <form action="#" method="POST" class="mx-auto mt-6 max-w-xl sm:mt-12">
+      {/*FORM */}
+      <!-- <form action="#" method="POST" class="mx-auto mt-6 max-w-xl sm:mt-12"> -->
+      <form
+        action="https://formsubmit.co/info@vantagede.com"
+        method="POST"
+        class="mx-auto mt-6 max-w-2xl sm:mt-12">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label
               for="first-name"
               class="block text-sm font-semibold leading-6 text-zinc-900"
-              >First name</label
+              >First name <span class="text-xs text-zinc-400">(required)</span
+              ></label
             >
             <div class="mt-2.5">
               <input
@@ -125,6 +132,7 @@ import Container from "../components/container.astro";
                 id="first-name"
                 autocomplete="given-name"
                 class="block w-full rounded-md border-0 bg-zinc-100 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-1 focus:ring-inset focus:ring-zinc-600 sm:text-sm sm:leading-6"
+                required
               />
             </div>
           </div>
@@ -132,7 +140,8 @@ import Container from "../components/container.astro";
             <label
               for="last-name"
               class="block text-sm font-semibold leading-6 text-zinc-900"
-              >Last name</label
+              >Last name <span class="text-xs text-zinc-400">(required)</span
+              ></label
             >
             <div class="mt-2.5">
               <input
@@ -141,6 +150,7 @@ import Container from "../components/container.astro";
                 id="last-name"
                 autocomplete="family-name"
                 class="block w-full rounded-md border-0 bg-zinc-100 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-1 focus:ring-inset focus:ring-zinc-600 sm:text-sm sm:leading-6"
+                required
               />
             </div>
           </div>
@@ -164,7 +174,8 @@ import Container from "../components/container.astro";
             <label
               for="email"
               class="block text-sm font-semibold leading-6 text-zinc-900"
-              >Email</label
+              >Email <span class="text-xs text-zinc-400">(required)</span
+              ></label
             >
             <div class="mt-2.5">
               <input
@@ -173,15 +184,35 @@ import Container from "../components/container.astro";
                 id="email"
                 autocomplete="email"
                 class="block w-full rounded-md border-0 bg-zinc-100 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-1 focus:ring-inset focus:ring-zinc-600 sm:text-sm sm:leading-6"
+                required
               />
             </div>
           </div>
-          <div class="sm:col-span-2"></div>
+          <div class="sm:col-span-2">
+            <label
+              for="subject"
+              class="block text-sm font-semibold leading-6 text-zinc-900"
+              >Subject (or Project Address) <span class="text-xs text-zinc-400"
+                >(required)</span
+              ></label
+            >
+            <div class="mt-2.5">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                autocomplete="subject"
+                class="block w-full rounded-md border-0 bg-zinc-100 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-1 focus:ring-inset focus:ring-zinc-600 sm:text-sm sm:leading-6"
+                required
+              />
+            </div>
+          </div>
           <div class="sm:col-span-2">
             <label
               for="message"
               class="block text-sm font-semibold leading-6 text-zinc-900"
-              >Message</label
+              >Message <span class="text-xs text-zinc-400">(required)</span
+              ></label
             >
             <div class="mt-2.5">
               <textarea
@@ -189,7 +220,7 @@ import Container from "../components/container.astro";
                 id="message"
                 rows="4"
                 class="block w-full rounded-md border-0 bg-zinc-100 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-1 focus:ring-inset focus:ring-zinc-600 sm:text-sm sm:leading-6"
-              ></textarea>
+                required></textarea>
             </div>
           </div>
         </div>
@@ -201,8 +232,6 @@ import Container from "../components/container.astro";
           >
         </div>
       </form>
-    </div> -->
-      </div>
     </div>
   </Container>
 </Layout>
