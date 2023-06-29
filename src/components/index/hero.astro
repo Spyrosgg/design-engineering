@@ -2,16 +2,17 @@
 import { Picture } from "@astrojs/image/components";
 // import bridge from "../../images/bridge-full2.png";
 import bridge from "../../images/bridge.png";
+import houses from "../../images/residential_hero.jpeg";
 ---
 
 <section class="bg-whitez relative h-screen">
-  <div class="ml-6 h-12 max-w-sm pt-16 sm:ml-16 lg:ml-28">
+  <div class="ml-6 h-12 max-w-sm pt-16 sm:ml-16 lg:ml-28 z-50">
     <h1 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-6xl">
       Engineering a better Future, <span class="text-sky-600">Together</span>
     </h1>
-    <p class="pt-6 text-xl">
+    <p class="pt-6 sm:text-xl max-w-[60vw] md:max-w-sm">
       Designed from the ground up to bridge the gap between your vision and
-      reality
+      reality.
     </p>
     <div class="pt-6">
       <a
@@ -22,13 +23,28 @@ import bridge from "../../images/bridge.png";
     </div>
   </div>
 
-  <Picture
-    class="absolute right-0 top-0 -z-10 h-[calc(100vh-64px)] object-cover"
-    src={bridge}
-    alt="bridge"
-    widths={[400, 800, 1400]}
-    sizes="(max-width: 800px) 100vw"
-    loading="eager"
-    format="avif"
-  />
+  <div
+    class="absolute -top-[500px] left-0 w-0 h-0 border-t-[500px] border-t-transparent border-l-[100vw] border-l-zinc-300 border-b-[80vh] border-b-transparent opacity-50 -z-10">
+  </div>
+
+  <div class="">
+    <Picture
+      class="absolute right-0 top-0 -z-20 h-[calc(100vh-64px)] object-cover"
+      src={bridge}
+      alt="bridge"
+      widths={[400, 800, 1400, 1800]}
+      sizes="(max-width: 800px) 100vw"
+      loading="eager"
+      format="avif"
+    />
+    <Picture
+      class="hidden absolute right-0 top-0 -z-20 h-[calc(100vh-64px)] object-cover"
+      src={houses}
+      alt="residential"
+      widths={[400, 800, 1400, 1800]}
+      sizes="(max-width: 800px) 100vw"
+      loading="eager"
+      format="avif"
+    />
+  </div>
 </section>

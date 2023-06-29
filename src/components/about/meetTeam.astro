@@ -1,9 +1,10 @@
 ---
 import { Picture, Image } from "@astrojs/image/components";
 import { SITE_TITLE, SITE_TITLE_SMALL } from "../../consts";
-import profileA from "../../images/profileA.png";
-import profileBB from "../../images/profileBB.png";
+import profileA from "../../images/profileAA.png";
+import profileB from "../../images/profileBB.png";
 const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
+import { Icon } from "astro-icon";
 
 // import profilePicA from "../../assets/profileA.png";
 // import profilePicB from "../../assets/profileB.png";
@@ -29,14 +30,22 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
     <p class="text-sm font-semibold leading-6 text-sky-600">
       Civil & Structural Engineer, Project manager
     </p>
-    <p class="mb-3 text-sm font-semibold text-sky-600">Co-Founder</p>
+    <p class="flex gap-2 items-end mb-3 text-sm font-semibold text-sky-600">
+      Co-Founder
+      <a
+        href="https://www.linkedin.com/in/diogo-pereira-ceng"
+        target="_blank"
+        rel="noopener noreferrer">
+        <Icon name="mdi:linkedin" class="w-6 h-6 text-sky-600" />
+      </a>
+    </p>
     <p>Diogo is a chartered engineer.</p>
   </div>
   <div class="profileB flex flex-col items-center">
     <!-- <Picture class="m-auto mb-1 max-w-[80%] lg:max-w-[65%] p-8 rounded-full" src={profilePicB} widths={widths} aspectRatio="1:1" alt="Spyros" /> -->
     <Picture
       class="m-auto mb-1 h-auto max-w-[15rem] rounded-full p-4 sm:p-8 md:max-w-xs"
-      src={profileBB}
+      src={profileB}
       alt="Spyros"
       widths={[200, 300]}
       aspectRatio="1:1"
@@ -50,7 +59,15 @@ const SITE_TITLE_UPP = SITE_TITLE.toUpperCase();
     <p class="text-sm font-semibold leading-6 text-sky-600">
       Civil & Structural Engineer, BIM manager
     </p>
-    <p class="mb-3 text-sm font-semibold text-sky-600">Co-Founder</p>
+    <p class="flex gap-2 items-end mb-3 text-sm font-semibold text-sky-600">
+      Co-Founder
+      <a
+        href="https://www.linkedin.com/in/spyrosgavriilidis"
+        target="_blank"
+        rel="noopener noreferrer">
+        <Icon name="mdi:linkedin" class="w-6 h-6 text-sky-600" />
+      </a>
+    </p>
     <p>
       <p>
         Spyros is a chartered engineer with extended experience of new-build,
