@@ -6,7 +6,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
-        display: ["rubik"],
+        // display: ["Rubik"],
+        // display: ["Oswald"],
+        // display: ["Lobster"],
+        display: ["Josefin Sans"],
       },
 
       animation: {
