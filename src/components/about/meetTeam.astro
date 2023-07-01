@@ -11,37 +11,9 @@ import { Icon } from "astro-icon";
 ---
 
 <h2 id="meet-our-team" class="mt-16 border-b-2 text-2xl">Meet Our Team</h2>
-<div class="mt-8 grid justify-center gap-8 sm:grid-cols-2">
-  <div class="profileA flex flex-col items-center">
-    <!-- <Picture class="m-auto mb-1 max-w-[80%] lg:max-w-[65%] p-8 rounded-full" src={profilePicA} widths={widths} aspectRatio="1:1" alt="Diogo" /> -->
-    <Picture
-      class="m-auto mb-1 h-auto max-w-[15rem] rounded-full p-4 sm:p-8 md:max-w-xs"
-      src={profileA}
-      alt="Diogo"
-      widths={[200, 300]}
-      aspectRatio="1:1"
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-    <h2 class="text-xl">
-      Diogo Pereira <span class="text-sm">CEng MICE</span>
-    </h2>
-    <p class="text-sm font-semibold leading-6 text-sky-600">
-      Civil & Structural Engineer, Project manager
-    </p>
-    <p class="flex gap-2 items-end mb-3 text-sm font-semibold text-sky-600">
-      Co-Founder
-      <a
-        href="https://www.linkedin.com/in/diogo-pereira-ceng"
-        target="_blank"
-        rel="noopener noreferrer">
-        <Icon name="mdi:linkedin" class="w-6 h-6 text-sky-600" />
-      </a>
-    </p>
-    <p>Diogo is a chartered engineer.</p>
-  </div>
-  <div class="profileB flex flex-col items-center">
+
+<ul class="mt-8 grid justify-center gap-8 sm:grid-cols-2">
+  <li class="profileB flex flex-col items-center">
     <!-- <Picture class="m-auto mb-1 max-w-[80%] lg:max-w-[65%] p-8 rounded-full" src={profilePicB} widths={widths} aspectRatio="1:1" alt="Spyros" /> -->
     <Picture
       class="m-auto mb-1 h-auto max-w-[15rem] rounded-full p-4 sm:p-8 md:max-w-xs"
@@ -82,5 +54,35 @@ import { Icon } from "astro-icon";
         Crossrail delivery.
       </p>
     </p>
-  </div>
-</div>
+  </li>
+
+  <li class="profileA flex flex-col items-center">
+    <!-- <Picture class="m-auto mb-1 max-w-[80%] lg:max-w-[65%] p-8 rounded-full" src={profilePicA} widths={widths} aspectRatio="1:1" alt="Diogo" /> -->
+    <Picture
+      class="m-auto mb-1 h-auto max-w-[15rem] rounded-full p-4 sm:p-8 md:max-w-xs"
+      src={profileA}
+      alt="Diogo"
+      widths={[200, 300]}
+      aspectRatio="1:1"
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+    />
+    <h2 class="text-xl">
+      Diogo Pereira <span class="text-sm">CEng MICE</span>
+    </h2>
+    <p class="text-sm font-semibold leading-6 text-sky-600">
+      Civil & Structural Engineer, Project manager
+    </p>
+    <p class="flex gap-2 items-end mb-3 text-sm font-semibold text-sky-600">
+      Co-Founder
+      <a
+        href="https://www.linkedin.com/in/diogo-pereira-ceng"
+        target="_blank"
+        rel="noopener noreferrer">
+        <Icon name="mdi:linkedin" class="w-6 h-6 text-sky-600" />
+      </a>
+    </p>
+    <p>Diogo is a chartered engineer.</p>
+  </li>
+</ul>
