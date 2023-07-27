@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon";
 import { Picture, Image } from "@astrojs/image/components";
-import { SITE_TITLE, SITE_TITLE_SMALL, EMAIL } from "../consts";
+import { SITE_TITLE, SITE_TITLE_SMALL, SITE_SUB_TITLE, EMAIL } from "../consts";
 import etek from "../images/logo/etek-sm.png";
 // const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
 ---
@@ -11,10 +11,10 @@ import etek from "../images/logo/etek-sm.png";
     class="relative mx-auto mt-16 grid grid-cols-1 justify-items-center bg-zinc-200 px-4 pt-6 sm:mt-32 sm:grid-cols-3 sm:px-6">
     <!-- 1 -->
     <div
-      class="hidden sm:visible sm:flex flex-none flex-col items-center justify-around py-6 sm:items-start sm:py-2">
+      class="hidden flex-none flex-col items-center justify-around py-6 sm:visible sm:flex sm:items-start sm:py-2">
       <div class="text-xl">
-        <span class="">{SITE_TITLE}</span>
-        <span class="text-zinc-600 md:visible"> Design Engineering</span>
+        <span class="">{SITE_TITLE_SMALL}</span>
+        <span class="text-zinc-600 md:visible">{SITE_SUB_TITLE}</span>
       </div>
       <div class="text-sm text-zinc-600">
         Engineering a better Future, <span class="text-sky-600">Together</span>
@@ -64,7 +64,7 @@ import etek from "../images/logo/etek-sm.png";
     </div>
   </div>
   <div
-    class="p-4 pt-4 flex justify-center sm:justify-start gap-4 bg-zinc-200 px-6 py-2 text-xs text-zinc-600 sm:grid-cols-2">
+    class="flex justify-center gap-4 bg-zinc-200 p-4 px-6 py-2 pt-4 text-xs text-zinc-600 sm:grid-cols-2 sm:justify-start">
     © 2023 {SITE_TITLE} | All rights reserved.
   </div>
 </footer>

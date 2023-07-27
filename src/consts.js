@@ -1,9 +1,9 @@
-// export const SITE_TITLE = 'Desing + Engineering';
-export const SITE_TITLE = "Vantage";
-export const SITE_TITLE_HEADER = "antage";
-export const SITE_TITLE_SMALL = "VDE";
-export const EMAIL = "vantagede.com";
-export const TEL_UK = "7491963814";
+export const SITE_SUB_TITLE = "Structural Engineering";
+export const SITE_TITLE = "P+G Structural Engineering";
+export const SITE_TITLE_HEADER = "P+G";
+export const SITE_TITLE_SMALL = "P+G";
+export const EMAIL = "pgse.co.uk";
+export const TEL_UK = "7599356987";
 export const TEL_GR = "6986689406";
 // export const SITE_TITLE_SMALL = 'D+E';
 

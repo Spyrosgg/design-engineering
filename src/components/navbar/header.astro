@@ -1,6 +1,11 @@
 ---
 import { Icon } from "astro-icon";
-import { SITE_TITLE, SITE_TITLE_SMALL, SITE_TITLE_HEADER } from "../../consts";
+import {
+  SITE_TITLE,
+  SITE_TITLE_SMALL,
+  SITE_TITLE_HEADER,
+  SITE_SUB_TITLE,
+} from "../../consts";
 
 /** Main menu items */
 const navItems = [
@@ -36,12 +41,10 @@ const navItems = [
         <div class="flex flex-col lg:flex-1">
           <span class="sr-only">{SITE_TITLE}</span>
           <div class="w-auto text-xl">
-            <span class="font-semibold"
-              ><span class="text-4xl -mr-[0.2rem] font-display">V</span>{
-                SITE_TITLE_HEADER
-              }</span
-            >
-            <span class="font-semibold text-zinc-600"> Design Engineering</span>
+            <span class="-mr-[0.2rem] text-4xl font-light"
+              >{SITE_TITLE_HEADER}
+            </span>
+            <span class="font-semibold text-zinc-600">{SITE_SUB_TITLE}</span>
           </div>
           <!-- <p class="text-sm leading-4 text-zinc-600">design + engineering</p> -->
           <!-- <div class="text-[0.7rem] text-zinc-400 leading-3 h-6 w-auto">
